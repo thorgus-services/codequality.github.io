@@ -1,0 +1,115 @@
+Create a high-conversion landing page for B2B SaaS validation targeting tech 
+leaders (CTOs, CEOs, VPs of Engineering). The page validates a problem about 
+AI-generated code quality risks. Design must be clean, professional, and 
+mobile-first optimized.
+
+STYLE GUIDELINES:
+- Design System: Modern, minimal, enterprise SaaS aesthetic
+- Primary Color: Deep Navy Blue (#1A365D) - trust and professionalism
+- Secondary Color: Emerald Green (#10B981) - action and success
+- Accent Color: Warm Gray (#F7FAFC) - section backgrounds
+- Text: Dark Slate (#2D3748) for body, Near Black (#1A202C) for headings
+- White space: Generous padding, breathable layout
+- Typography: Inter or SF Pro Display - clean, readable sans-serif
+- Border Radius: 8px for cards, 4px for buttons
+- Shadows: Subtle, layered (elevation 2-4)
+
+PAGE STRUCTURE (8 Sections):
+
+1. HEADER
+   - Minimal navigation bar
+   - Left: Logo placeholder (text-based "CodeAudit AI")
+   - Right: Simple nav links (How It Works, FAQ, Contact)
+   - Height: 64px, sticky position
+   - Background: White with subtle bottom border
+
+2. HERO SECTION
+   - Full-width, above the fold
+   - H1: Large bold headline (48px desktop, 32px mobile)
+   - H2: Subheadline with statistic highlight (73% in green)
+   - Primary CTA Button: Large, green, with arrow icon
+   - Trust signals row: 3 logo placeholders + "150+ diagnoses generated"
+   - Background: Gradient navy blue to lighter blue
+   - Text: White on colored background
+
+3. PROBLEM AGITATION SECTION
+   - Section title centered
+   - 3 pain point cards in horizontal grid (stack on mobile)
+   - Each card: Icon (top), Title, Description text
+   - Icons: Wrench, Clock, Shield (simple line icons)
+   - Cards: White background, subtle shadow, 24px padding
+   - Statistic bar below cards: Full-width, colored background, bold number
+
+4. SOLUTION TEASE SECTION
+   - Section title centered
+   - 5-item checklist with green checkmark icons
+   - Each item: Bold title + description text below
+   - Layout: Two columns on desktop, single on mobile
+   - Background: Light gray for contrast
+
+5. QUALIFICATION FORM SECTION
+   - Section title centered
+   - Form container: White card, centered, max-width 600px
+   - 8 form fields (mix of text, dropdown, radio, checkbox)
+   - Field style: Clean borders, 12px padding, clear labels
+   - Required fields marked with asterisk (red)
+   - Submit button: Same as hero CTA, full-width
+   - Privacy note: Small text, gray, below button
+   - Background: Light gradient or pattern
+
+6. SOCIAL PROOF SECTION
+   - Section title centered
+   - 3 testimonial cards in horizontal grid
+   - Each card: Quote text, avatar circle placeholder, Name, Role, Company size
+   - Cards: White with subtle border
+   - Background: White or very light gray
+
+7. FAQ SECTION
+   - Section title centered
+   - 4 Q&A pairs in accordion style or clean list
+   - Questions: Bold, slightly larger
+   - Answers: Regular weight, gray text
+   - Max-width: 800px centered
+   - Background: Light gray
+
+8. FOOTER
+   - Logo on left
+   - Links: Privacy, Terms, Contact (horizontal)
+   - Copyright text below
+   - Background: Dark navy (matching header contrast)
+   - Text: White/light gray
+
+CONVERSION OPTIMIZATION REQUIREMENTS:
+- CTA buttons must have high contrast (green on white or white on green)
+- Form section needs visual prominence (shadow, border, or background)
+- Use visual hierarchy: H1 > H2 > H3 > Body
+- Add hover states for all interactive elements
+- Ensure touch targets minimum 44px for mobile
+- Form fields should have clear focus states
+- Add subtle animations: fade-in on scroll, button hover lift
+
+MOBILE RESPONSIVENESS:
+- Stack all horizontal grids vertically on screens <768px
+- Reduce heading sizes by 30% on mobile
+- Form fields: Full width, 16px minimum font (prevent zoom)
+- Padding: Reduce from 80px to 40px vertical on mobile
+- CTA button: Full width on mobile
+
+ACCESSIBILITY:
+- Color contrast ratio minimum 4.5:1 for text
+- All icons should have aria-labels
+- Form fields must have visible labels (no placeholder-only)
+- Focus indicators visible on all interactive elements
+
+DIMENSIONS:
+- Desktop: 1440px width (artboard)
+- Tablet: 834px width (artboard)
+- Mobile: 390px width (artboard)
+- Create all 3 versions as separate frames
+
+OUTPUT:
+- Organized layers with clear naming (Section_Hero, Section_Form, etc.)
+- Auto-layout enabled for all sections
+- Components created for: Buttons, Cards, Form Fields, Testimonials
+- Color styles saved as variables
+- Text styles saved as variables
