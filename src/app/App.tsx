@@ -478,60 +478,106 @@ export default function App() {
         </div>
       </section>
 
-      {/* Social Proof Section */}
-      <section className="py-20 md:py-24 bg-white">
+      {/* Authority Section */}
+      <section id="authority" className="py-20 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1A202C] mb-12">
-            Trusted by Tech Leaders
-          </h2>
+          {/* Section Header */}
+          <div className="text-center mb-12">
+            <span className="inline-block bg-[#1A365D]/10 text-[#1A365D] px-4 py-1 rounded-full text-sm font-semibold mb-4">
+              Built by Experts
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1A202C] mb-4">
+              Why Trust CodeQuality AI?
+            </h2>
+            <p className="text-lg text-[#4A5568] max-w-2xl mx-auto">
+              Developed by engineers who've architected AI systems at enterprise scale — 
+              now bringing that rigor to PMEs.
+            </p>
+          </div>
 
-          <div className="grid md:grid-cols-3 gap-8 justify-items-center">
-            <div className="w-full md:w-80 bg-white border border-[#EDF2F7] rounded-lg p-6">
-              <p className="text-sm italic text-[#4A5568] mb-6">
-                "The diagnosis revealed security vulnerabilities we didn't even know existed. 
-                This saved us from a potential disaster."
-              </p>
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center text-[#1A365D] font-semibold">
-                  SK
+          {/* Founder Bio Card */}
+          <div className="max-w-4xl mx-auto mb-16 bg-white border border-[#E2E8F0] rounded-lg p-8 shadow-[0_2px_8px_rgba(0,0,0,0.08)]">
+            <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
+              <div className="w-24 h-24 bg-[#E8F5E9] rounded-full flex items-center justify-center flex-shrink-0">
+                <span className="text-3xl font-bold text-[#1A365D]">FS</span>
+              </div>
+              <div className="flex-1 text-center md:text-left">
+                <h3 className="text-xl font-bold text-[#1A202C] mb-1">Fernando Silva</h3>
+                <p className="text-sm text-[#4A5568] mb-4">AI Developer Specialist • Software Engineer</p>
+                
+                <div className="space-y-3 text-sm text-[#2D3748]">
+                  <p>
+                    14+ years building scalable systems with Python, Kotlin, and cloud-native architectures. 
+                    Currently developing AI-powered production platforms for enterprise financial services.
+                  </p>
+                  <p>
+                    Deep expertise in <strong className="text-[#1A202C]">Domain-Driven Design</strong>, <strong className="text-[#1A202C]">Hexagonal Architecture</strong>, 
+                    and <strong className="text-[#1A202C]">AI integration patterns</strong> — including RAG pipelines, multi-agent orchestration 
+                    with crewAI, and production-grade OpenAI integrations.
+                  </p>
                 </div>
-                <div>
-                  <div className="text-sm font-bold text-[#1A202C]">Sarah Kim</div>
-                  <div className="text-xs text-[#718096]">CTO, TechFlow (150 employees)</div>
+
+                {/* Expertise Tags */}
+                <div className="flex flex-wrap justify-center md:justify-start gap-2 mt-4">
+                  <span className="bg-[#F7FAFC] px-3 py-1 rounded text-xs text-[#2D3748]">Python</span>
+                  <span className="bg-[#F7FAFC] px-3 py-1 rounded text-xs text-[#2D3748]">Kotlin</span>
+                  <span className="bg-[#F7FAFC] px-3 py-1 rounded text-xs text-[#2D3748]">AWS</span>
+                  <span className="bg-[#F7FAFC] px-3 py-1 rounded text-xs text-[#2D3748]">DDD</span>
+                  <span className="bg-[#F7FAFC] px-3 py-1 rounded text-xs text-[#2D3748]">Hexagonal Architecture</span>
+                  <span className="bg-[#F7FAFC] px-3 py-1 rounded text-xs text-[#2D3748]">RAG</span>
+                  <span className="bg-[#F7FAFC] px-3 py-1 rounded text-xs text-[#2D3748]">crewAI</span>
+                  <span className="bg-[#F7FAFC] px-3 py-1 rounded text-xs text-[#2D3748]">OpenAI API</span>
+                  <span className="bg-[#F7FAFC] px-3 py-1 rounded text-xs text-[#2D3748]">SSE</span>
+                  <span className="bg-[#F7FAFC] px-3 py-1 rounded text-xs text-[#2D3748]">BFF Pattern</span>
+                </div>
+
+                {/* CTA to Connect */}
+                <div className="mt-6">
+                  <a 
+                    href="https://linkedin.com/in/fernandojr" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-[#1A365D] hover:text-[#2563EB] font-semibold text-sm"
+                  >
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    Connect on LinkedIn
+                  </a>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div className="w-full md:w-80 bg-white border border-[#EDF2F7] rounded-lg p-6">
-              <p className="text-sm italic text-[#4A5568] mb-6">
-                "Finally, data-backed insights on AI code quality. The ROI analysis alone 
-                was worth the 10 minutes it took to fill out the form."
+          {/* Authority Pillars */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-white border border-[#E2E8F0] rounded-lg p-6 text-center">
+              <div className="text-4xl mb-4">🏗️</div>
+              <h4 className="font-bold text-[#1A202C] mb-2">Enterprise Architecture</h4>
+              <p className="text-sm text-[#4A5568]">
+                Applied DDD and Hexagonal Architecture to build maintainable, testable systems in regulated environments.
               </p>
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center text-[#1A365D] font-semibold">
-                  MP
-                </div>
-                <div>
-                  <div className="text-sm font-bold text-[#1A202C]">Michael Peters</div>
-                  <div className="text-xs text-[#718096]">VP Engineering, DataCore (500+ employees)</div>
-                </div>
-              </div>
             </div>
-
-            <div className="w-full md:w-80 bg-white border border-[#EDF2F7] rounded-lg p-6">
-              <p className="text-sm italic text-[#4A5568] mb-6">
-                "The best practices framework transformed how our team uses AI tools. 
-                We're now 2x more productive with half the bugs."
+            <div className="bg-white border border-[#E2E8F0] rounded-lg p-6 text-center">
+              <div className="text-4xl mb-4">🤖</div>
+              <h4 className="font-bold text-[#1A202C] mb-2">AI Production Systems</h4>
+              <p className="text-sm text-[#4A5568]">
+                Built RAG pipelines, multi-agent workflows with crewAI, and real-time conversational experiences with SSE.
               </p>
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center text-[#1A365D] font-semibold">
-                  JL
-                </div>
-                <div>
-                  <div className="text-sm font-bold text-[#1A202C]">Jessica Liu</div>
-                  <div className="text-xs text-[#718096]">CEO, CloudBase (80 employees)</div>
-                </div>
-              </div>
+            </div>
+            <div className="bg-white border border-[#E2E8F0] rounded-lg p-6 text-center">
+              <div className="text-4xl mb-4">☁️</div>
+              <h4 className="font-bold text-[#1A202C] mb-2">Cloud-Native Infrastructure</h4>
+              <p className="text-sm text-[#4A5568]">
+                Designed scalable AWS infrastructure (CloudFront, API Gateway, Lambda) for low-latency AI services.
+              </p>
+            </div>
+            <div className="bg-white border border-[#E2E8F0] rounded-lg p-6 text-center">
+              <div className="text-4xl mb-4">🔐</div>
+              <h4 className="font-bold text-[#1A202C] mb-2">Quality & Compliance by Design</h4>
+              <p className="text-sm text-[#4A5568]">
+                Embedded observability, error handling, and regulatory controls from day one — not as an afterthought.
+              </p>
             </div>
           </div>
         </div>
