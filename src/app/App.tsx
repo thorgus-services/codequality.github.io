@@ -470,8 +470,8 @@ export default function App() {
 
               {/* Privacy Note */}
               <p className="text-sm text-gray-500 text-center">
-                We respect your privacy. Your information will only be used to create your 
-                custom diagnosis. Read our <a href="#" className="text-[#10B981] underline">Privacy Policy</a>.
+                We respect your privacy. Your information will only be used to create your
+                custom diagnosis.
               </p>
             </form>
           </div>
@@ -604,29 +604,19 @@ export default function App() {
             <div className="text-xl font-semibold mb-4 md:mb-0">
               CodeQuality AI
             </div>
-            <div className="flex flex-wrap gap-6">
-              <a href="#" className="text-white/80 hover:text-white transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-white/80 hover:text-white transition-colors">
-                Terms of Service
-              </a>
-              <a href="mailto:contact@codequality.ai" className="text-white/80 hover:text-white transition-colors">
-                Contact
-              </a>
-            </div>
           </div>
           <div className="border-t border-white/20 pt-8">
             <p className="text-center text-white/60 text-sm mb-4">
-              © 2026 CodeQuality AI • Uma iniciativa{" "}
+              © 2026 CodeQuality AI • A{" "}
               <a href="https://thorgus.com" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white underline">
                 Thorgus
-              </a>
+              </a>{" "}
+              initiative
             </p>
             <p className="text-center text-white/50 text-xs max-w-2xl mx-auto">
-              Projeto em fase de validação de mercado. 
-              Todos os dados coletados são anonimizados e usados 
-              exclusivamente para pesquisa e desenvolvimento de produto.
+              Project in market validation phase. 
+              All collected data is anonymized and used 
+              exclusively for product research and development.
             </p>
           </div>
         </div>
