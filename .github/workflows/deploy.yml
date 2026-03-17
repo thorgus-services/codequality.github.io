@@ -27,10 +27,6 @@ jobs:
           cache: 'pnpm'
       - run: pnpm install
       - run: pnpm run build
-      - name: Show dist contents
-        run: find dist/ -type f
-      - name: Show index.html
-        run: cat dist/index.html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
