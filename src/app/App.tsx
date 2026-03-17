@@ -602,7 +602,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
             <div className="text-xl font-semibold mb-4 md:mb-0">
-              CodeAudit AI
+              CodeQuality AI
             </div>
             <div className="flex flex-wrap gap-6">
               <a href="#" className="text-white/80 hover:text-white transition-colors">
@@ -611,13 +611,23 @@ export default function App() {
               <a href="#" className="text-white/80 hover:text-white transition-colors">
                 Terms of Service
               </a>
-              <a href="mailto:contact@codeaudit.ai" className="text-white/80 hover:text-white transition-colors">
+              <a href="mailto:contact@codequality.ai" className="text-white/80 hover:text-white transition-colors">
                 Contact
               </a>
             </div>
           </div>
-          <div className="border-t border-white/20 pt-8 text-center text-white/60 text-sm">
-            © 2026 CodeAudit AI. All rights reserved.
+          <div className="border-t border-white/20 pt-8">
+            <p className="text-center text-white/60 text-sm mb-4">
+              © 2026 CodeQuality AI • Uma iniciativa{" "}
+              <a href="https://thorgus.com" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white underline">
+                Thorgus
+              </a>
+            </p>
+            <p className="text-center text-white/50 text-xs max-w-2xl mx-auto">
+              Projeto em fase de validação de mercado. 
+              Todos os dados coletados são anonimizados e usados 
+              exclusivamente para pesquisa e desenvolvimento de produto.
+            </p>
           </div>
         </div>
       </footer>
