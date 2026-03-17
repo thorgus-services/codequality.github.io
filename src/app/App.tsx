@@ -71,18 +71,17 @@ export default function App() {
       <section className="relative overflow-hidden bg-gradient-to-br from-[#1A365D] via-[#2563EB] to-[#1A365D] text-white py-20 md:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Your Team Uses AI to Generate Code. Do You Know <br className="hidden md:block" />
-            If Technical Quality Is Compromised?
+            AI Code Is Fast. But Is It Safe?
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
-            <span className="text-[#10B981] font-semibold">73%</span> of CTOs report security 
-            vulnerabilities in AI-generated code. Get a custom diagnosis in 48 hours.
+            Discover in 2 minutes if your team's AI-generated code 
+            hides technical debt, security risks, or compliance gaps.
           </p>
-          <button 
+          <button
             onClick={scrollToForm}
             className="inline-flex items-center justify-center gap-2 bg-[#10B981] text-white px-8 h-14 min-w-[200px] rounded-lg hover:bg-[#059669] transition-all transform hover:scale-[1.02] font-semibold text-base shadow-[0_4px_14px_rgba(16,185,129,0.4)]"
           >
-            GET YOUR FREE DIAGNOSIS
+            Generate Free Diagnosis
             <ArrowRight className="w-5 h-5" />
           </button>
 
