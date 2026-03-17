@@ -45,23 +45,17 @@ export default function App() {
             CodeQuality AI
           </div>
           <nav className="hidden md:flex items-center gap-8">
-            <a 
-              href="#how-it-works" 
+            <a
+              href="#how-it-works"
               className="text-[#2D3748] hover:text-[#1A365D] transition-colors"
             >
               How It Works
             </a>
-            <a 
-              href="#faq" 
+            <a
+              href="#faq"
               className="text-[#2D3748] hover:text-[#1A365D] transition-colors"
             >
               FAQ
-            </a>
-            <a 
-              href="#contact" 
-              className="text-[#2D3748] hover:text-[#1A365D] transition-colors"
-            >
-              Contact
             </a>
           </nav>
         </div>
