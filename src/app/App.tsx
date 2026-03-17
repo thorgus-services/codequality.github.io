@@ -42,7 +42,7 @@ export default function App() {
       <header className="sticky top-0 z-50 bg-white border-b border-gray-200 h-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between">
           <div className="text-xl text-[#1A202C] font-semibold">
-            CodeAudit AI
+            CodeQuality AI
           </div>
           <nav className="hidden md:flex items-center gap-8">
             <a 
@@ -71,8 +71,8 @@ export default function App() {
       <section className="relative overflow-hidden bg-gradient-to-br from-[#1A365D] via-[#2563EB] to-[#1A365D] text-white py-20 md:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Is Your AI-Generated Code <br className="hidden md:block" />
-            Exposing Your Business to Risk?
+            Your Team Uses AI to Generate Code. Do You Know <br className="hidden md:block" />
+            If Technical Quality Is Compromised?
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
             <span className="text-[#10B981] font-semibold">73%</span> of CTOs report security 
