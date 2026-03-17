@@ -87,22 +87,40 @@ export default function App() {
           </button>
 
           {/* Trust Signals */}
-          <div className="mt-16 flex flex-wrap items-center justify-center gap-8 text-sm text-white/80">
-            <div className="flex items-center gap-3">
-              <div className="w-20 h-12 bg-white/10 rounded grayscale" />
-              <span>TechCorp</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="w-20 h-12 bg-white/10 rounded grayscale" />
-              <span>DataFlow</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="w-20 h-12 bg-white/10 rounded grayscale" />
-              <span>CloudBase</span>
-            </div>
-            <div className="flex items-center gap-2 text-white/90 bg-white/10 px-4 py-2 rounded-full">
+          <div className="mt-16 max-w-2xl mx-auto">
+            <div className="inline-flex items-center gap-2 text-white/90 bg-white/10 px-4 py-2 rounded-full mb-6">
               <CheckCircle2 className="w-4 h-4" />
               <span><span className="font-semibold">150+</span> diagnoses generated</span>
+            </div>
+            
+            <div className="bg-white/10 rounded-lg p-6 text-left">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-2xl">🔬</span>
+                <h3 className="text-lg font-semibold text-white">Project in Validation</h3>
+              </div>
+              <p className="text-white/80 text-sm mb-4">
+                CodeQuality AI is being co-created with CEOs, CTOs, and GPMs 
+                from tech SMEs in Brazil. Your participation helps shape 
+                a solution that solves real pain points.
+              </p>
+              <ul className="space-y-2 text-sm text-white/80 mb-6">
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-[#10B981]" />
+                  <span>50+ leaders have already contributed</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-[#10B981]" />
+                  <span>3 companies in free pilot</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-[#10B981]" />
+                  <span>Partnership with CrudPB, PUG-PB, and DevTOA</span>
+                </li>
+              </ul>
+              <button className="inline-flex items-center gap-2 bg-white/10 text-white px-6 h-11 rounded-lg hover:bg-white/20 transition-all font-semibold text-sm border border-white/20">
+                I Want to Give Feedback
+                <ArrowRight className="w-4 h-4" />
+              </button>
             </div>
           </div>
         </div>
