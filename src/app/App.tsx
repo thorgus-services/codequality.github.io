@@ -495,60 +495,6 @@ export default function App() {
             </p>
           </div>
 
-          {/* Founder Bio Card */}
-          <div className="max-w-4xl mx-auto mb-16 bg-white border border-[#E2E8F0] rounded-lg p-8 shadow-[0_2px_8px_rgba(0,0,0,0.08)]">
-            <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
-              <div className="w-24 h-24 bg-[#E8F5E9] rounded-full flex items-center justify-center flex-shrink-0">
-                <span className="text-3xl font-bold text-[#1A365D]">FS</span>
-              </div>
-              <div className="flex-1 text-center md:text-left">
-                <h3 className="text-xl font-bold text-[#1A202C] mb-1">Fernando Silva</h3>
-                <p className="text-sm text-[#4A5568] mb-4">AI Developer Specialist • Software Engineer</p>
-                
-                <div className="space-y-3 text-sm text-[#2D3748]">
-                  <p>
-                    14+ years building scalable systems with Python, Kotlin, and cloud-native architectures. 
-                    Currently developing AI-powered production platforms for enterprise financial services.
-                  </p>
-                  <p>
-                    Deep expertise in <strong className="text-[#1A202C]">Domain-Driven Design</strong>, <strong className="text-[#1A202C]">Hexagonal Architecture</strong>, 
-                    and <strong className="text-[#1A202C]">AI integration patterns</strong> — including RAG pipelines, multi-agent orchestration 
-                    with crewAI, and production-grade OpenAI integrations.
-                  </p>
-                </div>
-
-                {/* Expertise Tags */}
-                <div className="flex flex-wrap justify-center md:justify-start gap-2 mt-4">
-                  <span className="bg-[#F7FAFC] px-3 py-1 rounded text-xs text-[#2D3748]">Python</span>
-                  <span className="bg-[#F7FAFC] px-3 py-1 rounded text-xs text-[#2D3748]">Kotlin</span>
-                  <span className="bg-[#F7FAFC] px-3 py-1 rounded text-xs text-[#2D3748]">AWS</span>
-                  <span className="bg-[#F7FAFC] px-3 py-1 rounded text-xs text-[#2D3748]">DDD</span>
-                  <span className="bg-[#F7FAFC] px-3 py-1 rounded text-xs text-[#2D3748]">Hexagonal Architecture</span>
-                  <span className="bg-[#F7FAFC] px-3 py-1 rounded text-xs text-[#2D3748]">RAG</span>
-                  <span className="bg-[#F7FAFC] px-3 py-1 rounded text-xs text-[#2D3748]">crewAI</span>
-                  <span className="bg-[#F7FAFC] px-3 py-1 rounded text-xs text-[#2D3748]">OpenAI API</span>
-                  <span className="bg-[#F7FAFC] px-3 py-1 rounded text-xs text-[#2D3748]">SSE</span>
-                  <span className="bg-[#F7FAFC] px-3 py-1 rounded text-xs text-[#2D3748]">BFF Pattern</span>
-                </div>
-
-                {/* CTA to Connect */}
-                <div className="mt-6">
-                  <a 
-                    href="https://linkedin.com/in/fernandojr" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-[#1A365D] hover:text-[#2563EB] font-semibold text-sm"
-                  >
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                    </svg>
-                    Connect on LinkedIn
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
           {/* Authority Pillars */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white border border-[#E2E8F0] rounded-lg p-6 text-center">
@@ -578,6 +524,23 @@ export default function App() {
               <p className="text-sm text-[#4A5568]">
                 Embedded observability, error handling, and regulatory controls from day one — not as an afterthought.
               </p>
+            </div>
+          </div>
+
+          {/* Tech Stack */}
+          <div className="mt-12 text-center">
+            <p className="text-sm text-[#4A5568] mb-4 font-semibold">Built with modern technologies</p>
+            <div className="flex flex-wrap justify-center gap-3">
+              <span className="bg-[#F7FAFC] px-4 py-2 rounded-lg text-sm text-[#2D3748]">Python</span>
+              <span className="bg-[#F7FAFC] px-4 py-2 rounded-lg text-sm text-[#2D3748]">Kotlin</span>
+              <span className="bg-[#F7FAFC] px-4 py-2 rounded-lg text-sm text-[#2D3748]">AWS</span>
+              <span className="bg-[#F7FAFC] px-4 py-2 rounded-lg text-sm text-[#2D3748]">React</span>
+              <span className="bg-[#F7FAFC] px-4 py-2 rounded-lg text-sm text-[#2D3748]">TypeScript</span>
+              <span className="bg-[#F7FAFC] px-4 py-2 rounded-lg text-sm text-[#2D3748]">OpenAI API</span>
+              <span className="bg-[#F7FAFC] px-4 py-2 rounded-lg text-sm text-[#2D3748]">RAG</span>
+              <span className="bg-[#F7FAFC] px-4 py-2 rounded-lg text-sm text-[#2D3748]">crewAI</span>
+              <span className="bg-[#F7FAFC] px-4 py-2 rounded-lg text-sm text-[#2D3748]">DDD</span>
+              <span className="bg-[#F7FAFC] px-4 py-2 rounded-lg text-sm text-[#2D3748]">Hexagonal Architecture</span>
             </div>
           </div>
         </div>
