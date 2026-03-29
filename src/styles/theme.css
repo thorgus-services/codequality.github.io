@@ -4,6 +4,50 @@
   --font-size: 16px;
   --background: #ffffff;
   --foreground: oklch(0.145 0 0);
+
+  /* Design System Colors */
+  --primary-navy: #1A365D;
+  --primary-green: #10B981;
+  --primary-green-hover: #059669;
+  --text-dark: #1A202C;
+  --text-body: #4A5568;
+  --text-muted: #718096;
+  --bg-white: #FFFFFF;
+  --bg-light: #F7FAFC;
+  --bg-gray: #EDF2F7;
+  --border-light: #E2E8F0;
+  --error-red: #E53E3E;
+  
+  /* Secondary Button Colors (Hero) */
+  --secondary-button-border: rgba(255, 255, 255, 0.5);
+  --secondary-button-text: #FFFFFF;
+  --secondary-button-hover: rgba(255, 255, 255, 0.1);
+
+  /* Design System Typography */
+  --h1-desktop-size: 48px;
+  --h1-desktop-height: 56px;
+  --h1-mobile-size: 32px;
+  --h1-mobile-height: 40px;
+  --h2-desktop-size: 32px;
+  --h2-desktop-height: 40px;
+  --h2-mobile-size: 24px;
+  --h2-mobile-height: 32px;
+  --body-large-size: 18px;
+  --body-large-height: 28px;
+  --body-size: 16px;
+  --body-height: 24px;
+  --body-small-size: 14px;
+  --body-small-height: 20px;
+  --caption-size: 12px;
+  --caption-height: 16px;
+
+  /* Design System Spacing */
+  --section-padding-desktop: 80px;
+  --section-padding-mobile: 40px;
+  --container-max: 1200px;
+  --grid-gap: 24px;
+  --element-spacing: 16px;
+
   --card: #ffffff;
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -117,6 +161,49 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* Design System Colors */
+  --color-primary-navy: var(--primary-navy);
+  --color-primary-green: var(--primary-green);
+  --color-primary-green-hover: var(--primary-green-hover);
+  --color-text-dark: var(--text-dark);
+  --color-text-body: var(--text-body);
+  --color-text-muted: var(--text-muted);
+  --color-bg-white: var(--bg-white);
+  --color-bg-light: var(--bg-light);
+  --color-bg-gray: var(--bg-gray);
+  --color-border-light: var(--border-light);
+  --color-error-red: var(--error-red);
+  
+  /* Secondary Button Colors */
+  --color-secondary-button-border: var(--secondary-button-border);
+  --color-secondary-button-text: var(--secondary-button-text);
+  --color-secondary-button-hover: var(--secondary-button-hover);
+
+  /* Design System Typography */
+  --font-size-h1-desktop: var(--h1-desktop-size);
+  --font-size-h1-mobile: var(--h1-mobile-size);
+  --line-height-h1-desktop: var(--h1-desktop-height);
+  --line-height-h1-mobile: var(--h1-mobile-height);
+  --font-size-h2-desktop: var(--h2-desktop-size);
+  --font-size-h2-mobile: var(--h2-mobile-size);
+  --line-height-h2-desktop: var(--h2-desktop-height);
+  --line-height-h2-mobile: var(--h2-mobile-height);
+  --font-size-body-large: var(--body-large-size);
+  --line-height-body-large: var(--body-large-height);
+  --font-size-body: var(--body-size);
+  --line-height-body: var(--body-height);
+  --font-size-body-small: var(--body-small-size);
+  --line-height-body-small: var(--body-small-height);
+  --font-size-caption: var(--caption-size);
+  --line-height-caption: var(--caption-height);
+
+  /* Design System Spacing */
+  --spacing-section-desktop: var(--section-padding-desktop);
+  --spacing-section-mobile: var(--section-padding-mobile);
+  --container-max-width: var(--container-max);
+  --spacing-grid-gap: var(--grid-gap);
+  --spacing-element: var(--element-spacing);
 }
 
 @layer base {
@@ -126,6 +213,19 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Hero H1 Typography */
+  .hero-h1 {
+    font-size: var(--h1-mobile-size);
+    line-height: var(--h1-mobile-height);
+  }
+
+  @media (min-width: 768px) {
+    .hero-h1 {
+      font-size: var(--h1-desktop-size);
+      line-height: var(--h1-desktop-height);
+    }
   }
 
   /**

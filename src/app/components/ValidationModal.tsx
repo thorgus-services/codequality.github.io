@@ -45,17 +45,17 @@ export function ValidationModal({ isOpen, onClose }: ValidationModalProps) {
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-[#64748B] hover:text-[#1E293B] transition-colors"
+          className="absolute top-4 right-4 text-[var(--text-muted)] hover:text-[var(--text-dark)] transition-colors"
           aria-label="Close modal"
         >
           <X size={24} />
         </button>
 
         {/* Modal Header */}
-        <h2 className="text-2xl font-semibold text-[#1E293B] mb-2">
+        <h2 className="text-2xl font-semibold text-[var(--text-dark)] mb-2">
           Participe da Validação
         </h2>
-        <p className="text-[#64748B] mb-6">
+        <p className="text-[var(--text-muted)] mb-6">
           Ajude a construir a solução certa para o mercado
         </p>
 
@@ -65,7 +65,7 @@ export function ValidationModal({ isOpen, onClose }: ValidationModalProps) {
           <div>
             <label
               htmlFor="modal-name"
-              className="block text-sm font-medium text-[#1E293B] mb-2"
+              className="block text-sm font-medium text-[var(--text-dark)] mb-2"
             >
               Seu nome *
             </label>
@@ -77,7 +77,7 @@ export function ValidationModal({ isOpen, onClose }: ValidationModalProps) {
               value={formData.name}
               onChange={handleChange}
               placeholder="Digite seu nome completo"
-              className="w-full h-12 px-4 border border-[#E2E8F0] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent text-base"
+              className="w-full h-12 px-4 border border-[var(--border-light)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent text-base"
             />
           </div>
 
@@ -85,7 +85,7 @@ export function ValidationModal({ isOpen, onClose }: ValidationModalProps) {
           <div>
             <label
               htmlFor="modal-email"
-              className="block text-sm font-medium text-[#1E293B] mb-2"
+              className="block text-sm font-medium text-[var(--text-dark)] mb-2"
             >
               E-mail corporativo *
             </label>
@@ -97,7 +97,7 @@ export function ValidationModal({ isOpen, onClose }: ValidationModalProps) {
               value={formData.email}
               onChange={handleChange}
               placeholder="seu@empresa.com"
-              className="w-full h-12 px-4 border border-[#E2E8F0] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent text-base"
+              className="w-full h-12 px-4 border border-[var(--border-light)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent text-base"
             />
           </div>
 
@@ -105,7 +105,7 @@ export function ValidationModal({ isOpen, onClose }: ValidationModalProps) {
           <div>
             <label
               htmlFor="modal-interest"
-              className="block text-sm font-medium text-[#1E293B] mb-2"
+              className="block text-sm font-medium text-[var(--text-dark)] mb-2"
             >
               Tenho interesse em...
             </label>
@@ -115,10 +115,10 @@ export function ValidationModal({ isOpen, onClose }: ValidationModalProps) {
               required
               value={formData.interest}
               onChange={handleChange}
-              className="w-full h-12 px-4 border border-[#E2E8F0] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent bg-white text-base"
+              className="w-full h-12 px-4 border border-[var(--border-light)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent bg-white text-base"
             >
               <option value="">Selecione uma opção</option>
-              <option value="pilot">Participar do pilot gratuito</option>
+              <option value="pilot">Participar do projeto piloto gratuito</option>
               <option value="feedback">Dar feedback sobre a ideia</option>
               <option value="partnership">
                 Explorar parceria com minha comunidade
@@ -135,7 +135,7 @@ export function ValidationModal({ isOpen, onClose }: ValidationModalProps) {
           </button>
 
           {/* Privacy Note */}
-          <p className="text-sm text-[#64748B] text-center">
+          <p className="text-sm text-[var(--text-muted)] text-center">
             🔐 Seus dados estão seguros. Não enviamos spam.
           </p>
         </form>

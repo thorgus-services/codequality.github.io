@@ -42,25 +42,25 @@ export function QualificationForm() {
   return (
     <section
       id="diagnosis-form"
-      className="py-16 md:py-20 bg-gradient-to-br from-[#EFF6FF] to-white"
+      className="py-[var(--section-padding-mobile)] md:py-[var(--section-padding-desktop)] bg-gradient-to-br from-[var(--bg-light)] to-white"
     >
       <div className="max-w-[650px] mx-auto px-6">
-        <h2 className="text-[24px] md:text-[32px] leading-[32px] md:leading-[40px] font-semibold text-[#1E293B] text-center mb-4">
-          Responda 7 Perguntas Para Gerar Seu Diagnóstico
+        <h2 className="text-[24px] md:text-[32px] leading-[32px] md:leading-[40px] font-semibold text-[var(--text-dark)] text-center mb-4">
+          Responda 7 perguntas para gerar seu diagnóstico
         </h2>
-        <p className="text-center text-[#64748B] mb-10">
+        <p className="text-center text-[var(--text-muted)] mb-10">
           Análise personalizada em 2 minutos
         </p>
 
         <form
           onSubmit={handleSubmit}
-          className="bg-white border border-[#E2E8F0] rounded-xl p-8 md:p-10 shadow-lg"
+          className="bg-white border border-[var(--border-light)] rounded-xl p-8 md:p-10 shadow-lg"
         >
           {/* 1. Nome Completo */}
           <div className="mb-6">
             <label
               htmlFor="name"
-              className="block text-sm font-medium text-[#1E293B] mb-2"
+              className="block text-sm font-medium text-[var(--text-dark)] mb-2"
             >
               Nome Completo *
             </label>
@@ -72,7 +72,7 @@ export function QualificationForm() {
               value={formData.name}
               onChange={handleChange}
               placeholder="Seu nome completo"
-              className="w-full h-12 px-4 border border-[#E2E8F0] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent text-base"
+              className="w-full h-12 px-4 border border-[var(--border-light)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent text-base"
             />
           </div>
 
@@ -80,7 +80,7 @@ export function QualificationForm() {
           <div className="mb-6">
             <label
               htmlFor="email"
-              className="block text-sm font-medium text-[#1E293B] mb-2"
+              className="block text-sm font-medium text-[var(--text-dark)] mb-2"
             >
               E-mail Corporativo *
             </label>
@@ -92,7 +92,7 @@ export function QualificationForm() {
               value={formData.email}
               onChange={handleChange}
               placeholder="seu@empresa.com"
-              className="w-full h-12 px-4 border border-[#E2E8F0] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent text-base"
+              className="w-full h-12 px-4 border border-[var(--border-light)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent text-base"
             />
           </div>
 
@@ -100,7 +100,7 @@ export function QualificationForm() {
           <div className="mb-6">
             <label
               htmlFor="role"
-              className="block text-sm font-medium text-[#1E293B] mb-2"
+              className="block text-sm font-medium text-[var(--text-dark)] mb-2"
             >
               Cargo *
             </label>
@@ -110,7 +110,7 @@ export function QualificationForm() {
               required
               value={formData.role}
               onChange={handleChange}
-              className="w-full h-12 px-4 border border-[#E2E8F0] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent bg-white text-base"
+              className="w-full h-12 px-4 border border-[var(--border-light)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent bg-white text-base"
             >
               <option value="">Selecione seu cargo</option>
               <option value="ceo">CEO/Founder</option>
@@ -126,7 +126,7 @@ export function QualificationForm() {
           <div className="mb-6">
             <label
               htmlFor="teamSize"
-              className="block text-sm font-medium text-[#1E293B] mb-2"
+              className="block text-sm font-medium text-[var(--text-dark)] mb-2"
             >
               Tamanho do Time de Engenharia *
             </label>
@@ -136,7 +136,7 @@ export function QualificationForm() {
               required
               value={formData.teamSize}
               onChange={handleChange}
-              className="w-full h-12 px-4 border border-[#E2E8F0] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent bg-white text-base"
+              className="w-full h-12 px-4 border border-[var(--border-light)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent bg-white text-base"
             >
               <option value="">Selecione o tamanho</option>
               <option value="1-5">1-5 devs</option>
@@ -148,7 +148,7 @@ export function QualificationForm() {
 
           {/* 5. Usa IA para código? */}
           <div className="mb-6">
-            <label className="block text-sm font-medium text-[#1E293B] mb-3">
+            <label className="block text-sm font-medium text-[var(--text-dark)] mb-3">
               Seu time usa IA para gerar código? *
             </label>
             <div className="space-y-2">
@@ -162,7 +162,7 @@ export function QualificationForm() {
                   required
                   className="mr-3 h-4 w-4 text-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]"
                 />
-                <span className="text-[#475569]">Sim, amplamente</span>
+                <span className="text-[var(--text-body)]">Sim, amplamente</span>
               </label>
               <label className="flex items-center">
                 <input
@@ -173,7 +173,7 @@ export function QualificationForm() {
                   onChange={handleChange}
                   className="mr-3 h-4 w-4 text-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]"
                 />
-                <span className="text-[#475569]">Sim, pontualmente</span>
+                <span className="text-[var(--text-body)]">Sim, pontualmente</span>
               </label>
               <label className="flex items-center">
                 <input
@@ -184,7 +184,7 @@ export function QualificationForm() {
                   onChange={handleChange}
                   className="mr-3 h-4 w-4 text-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]"
                 />
-                <span className="text-[#475569]">Não, mas planeja</span>
+                <span className="text-[var(--text-body)]">Não, mas planeja</span>
               </label>
               <label className="flex items-center">
                 <input
@@ -195,7 +195,7 @@ export function QualificationForm() {
                   onChange={handleChange}
                   className="mr-3 h-4 w-4 text-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]"
                 />
-                <span className="text-[#475569]">Não</span>
+                <span className="text-[var(--text-body)]">Não</span>
               </label>
             </div>
           </div>
@@ -204,7 +204,7 @@ export function QualificationForm() {
           <div className="mb-6">
             <label
               htmlFor="reviewHours"
-              className="block text-sm font-medium text-[#1E293B] mb-2"
+              className="block text-sm font-medium text-[var(--text-dark)] mb-2"
             >
               Horas/semana revisando código gerado por IA *
             </label>
@@ -214,7 +214,7 @@ export function QualificationForm() {
               required
               value={formData.reviewHours}
               onChange={handleChange}
-              className="w-full h-12 px-4 border border-[#E2E8F0] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent bg-white text-base"
+              className="w-full h-12 px-4 border border-[var(--border-light)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent bg-white text-base"
             >
               <option value="">Selecione</option>
               <option value="none">Não revisamos</option>
@@ -230,7 +230,7 @@ export function QualificationForm() {
           <div className="mb-6">
             <label
               htmlFor="bugs"
-              className="block text-sm font-medium text-[#1E293B] mb-2"
+              className="block text-sm font-medium text-[var(--text-dark)] mb-2"
             >
               Bugs em produção (último trimestre) *
             </label>
@@ -240,7 +240,7 @@ export function QualificationForm() {
               required
               value={formData.bugs}
               onChange={handleChange}
-              className="w-full h-12 px-4 border border-[#E2E8F0] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent bg-white text-base"
+              className="w-full h-12 px-4 border border-[var(--border-light)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent bg-white text-base"
             >
               <option value="">Selecione</option>
               <option value="none">Nenhum</option>
@@ -256,7 +256,7 @@ export function QualificationForm() {
           <div className="mb-6">
             <label
               htmlFor="features"
-              className="block text-sm font-medium text-[#1E293B] mb-2"
+              className="block text-sm font-medium text-[var(--text-dark)] mb-2"
             >
               Features entregues por sprint (média) *
             </label>
@@ -266,7 +266,7 @@ export function QualificationForm() {
               required
               value={formData.features}
               onChange={handleChange}
-              className="w-full h-12 px-4 border border-[#E2E8F0] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent bg-white text-base"
+              className="w-full h-12 px-4 border border-[var(--border-light)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent bg-white text-base"
             >
               <option value="">Selecione</option>
               <option value="<3">&lt;3 features</option>
@@ -282,7 +282,7 @@ export function QualificationForm() {
           <div className="mb-6">
             <label
               htmlFor="mainConcern"
-              className="block text-sm font-medium text-[#1E293B] mb-2"
+              className="block text-sm font-medium text-[var(--text-dark)] mb-2"
             >
               Sua maior preocupação hoje *
             </label>
@@ -292,7 +292,7 @@ export function QualificationForm() {
               required
               value={formData.mainConcern}
               onChange={handleChange}
-              className="w-full h-12 px-4 border border-[#E2E8F0] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent bg-white text-base"
+              className="w-full h-12 px-4 border border-[var(--border-light)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent bg-white text-base"
             >
               <option value="">Selecione</option>
               <option value="quality">Qualidade do código</option>
@@ -306,7 +306,7 @@ export function QualificationForm() {
 
           {/* 10. Restrições de código externo */}
           <div className="mb-6">
-            <label className="block text-sm font-medium text-[#1E293B] mb-3">
+            <label className="block text-sm font-medium text-[var(--text-dark)] mb-3">
               Sua empresa tem restrições para enviar código a APIs externas? *
             </label>
             <div className="space-y-2">
@@ -320,7 +320,7 @@ export function QualificationForm() {
                   required
                   className="mr-3 h-4 w-4 text-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]"
                 />
-                <span className="text-[#475569]">Sim, restrições rígidas</span>
+                <span className="text-[var(--text-body)]">Sim, restrições rígidas</span>
               </label>
               <label className="flex items-center">
                 <input
@@ -331,7 +331,7 @@ export function QualificationForm() {
                   onChange={handleChange}
                   className="mr-3 h-4 w-4 text-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]"
                 />
-                <span className="text-[#475569]">Sim, restrições moderadas</span>
+                <span className="text-[var(--text-body)]">Sim, restrições moderadas</span>
               </label>
               <label className="flex items-center">
                 <input
@@ -342,7 +342,7 @@ export function QualificationForm() {
                   onChange={handleChange}
                   className="mr-3 h-4 w-4 text-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]"
                 />
-                <span className="text-[#475569]">Não</span>
+                <span className="text-[var(--text-body)]">Não</span>
               </label>
               <label className="flex items-center">
                 <input
@@ -353,7 +353,7 @@ export function QualificationForm() {
                   onChange={handleChange}
                   className="mr-3 h-4 w-4 text-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]"
                 />
-                <span className="text-[#475569]">Não sei</span>
+                <span className="text-[var(--text-body)]">Não sei</span>
               </label>
             </div>
           </div>
@@ -368,7 +368,7 @@ export function QualificationForm() {
                 onChange={handleChange}
                 className="mr-3 mt-1 h-4 w-4 text-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6] rounded"
               />
-              <span className="text-sm text-[#475569]">
+              <span className="text-sm text-[var(--text-body)]">
                 Sim, quero otimizar meu resultado e receber recomendações
                 personalizadas
               </span>
@@ -378,13 +378,13 @@ export function QualificationForm() {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-[#16A34A] hover:bg-[#15803D] text-white py-4 rounded-lg text-lg font-semibold transition-all hover:shadow-xl hover:-translate-y-0.5"
+            className="w-full bg-[var(--primary-green)] hover:bg-[var(--primary-green-hover)] text-white py-4 rounded-lg text-lg font-semibold transition-all hover:shadow-xl hover:-translate-y-0.5"
           >
             GERAR DIAGNÓSTICO GRATUITO →
           </button>
 
           {/* Privacy Note */}
-          <p className="text-sm text-[#64748B] text-center mt-6">
+          <p className="text-sm text-[var(--text-muted)] text-center mt-6">
             🔐 Seus dados estão seguros. Não enviamos spam. Código-fonte NÃO é
             coletado.
           </p>

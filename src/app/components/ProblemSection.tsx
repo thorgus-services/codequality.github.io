@@ -26,9 +26,9 @@ export function ProblemSection() {
   ];
 
   return (
-    <section className="py-16 md:py-20 bg-white">
-      <div className="max-w-[1200px] mx-auto px-6">
-        <h2 className="text-[24px] md:text-[32px] leading-[32px] md:leading-[40px] font-semibold text-[#1E293B] text-center mb-12">
+    <section className="py-[var(--section-padding-mobile)] md:py-[var(--section-padding-desktop)] bg-white">
+      <div className="max-w-[var(--container-max)] mx-auto px-6">
+        <h2 className="text-[24px] md:text-[32px] leading-[32px] md:leading-[40px] font-semibold text-[var(--text-dark)] text-center mb-12">
           O Custo Oculto da IA no Desenvolvimento de Software
         </h2>
 
@@ -36,30 +36,37 @@ export function ProblemSection() {
           {painPoints.map((point, index) => (
             <div
               key={index}
-              className="bg-white border border-[#E2E8F0] rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow"
+              className="bg-white border border-[var(--border-light)] rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow"
             >
-              <h3 className="text-lg font-semibold text-[#1E293B] mb-4">
+              <h3 className="text-lg font-semibold text-[var(--text-dark)] mb-4">
                 {point.title}
               </h3>
-              <p className="text-[#475569] mb-4 leading-relaxed">
+              <p className="text-[var(--text-body)] mb-4 leading-relaxed">
                 {point.description}
               </p>
-              <div className="text-sm font-medium text-[#DC2626] bg-red-50 p-3 rounded-lg">
-                Impact: {point.impact}
+              <div className="text-sm font-medium text-[var(--error-red)] bg-red-50 p-3 rounded-lg">
+                Impacto: {point.impact}
               </div>
             </div>
           ))}
         </div>
 
-        <div className="bg-[#EFF6FF] border border-[#3B82F6]/20 rounded-xl p-6 text-center">
-          <p className="text-[#1E293B] font-medium flex items-center justify-center gap-2 flex-wrap">
+        <div className="bg-[var(--bg-light)] border border-[#3B82F6]/20 rounded-xl p-6 text-center">
+          <p className="text-[var(--text-dark)] font-medium flex items-center justify-center gap-2 flex-wrap">
             <BarChart3 className="text-[#3B82F6]" size={24} />
             <span className="text-lg">
               64% dos CEOs afirmam: o sucesso da IA depende mais das PESSOAS do
               que da tecnologia.
             </span>
           </p>
-          <p className="text-[#64748B] text-sm mt-2">(Fonte: EY 2025)</p>
+          <a
+            href="https://newsroom.ibm.com/2024-05-16-IBM-Study-As-CEOs-Race-Towards-Gen-AI-Adoption,-Questions-Around-Workforce-and-Culture-Persist"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#3B82F6] text-sm mt-2 hover:underline inline-block"
+          >
+            (Fonte: IBM Study 2024)
+          </a>
         </div>
       </div>
     </section>

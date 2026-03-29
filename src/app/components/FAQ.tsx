@@ -23,7 +23,7 @@ export function FAQ() {
     {
       question: "Quanto tempo para receber o diagnóstico?",
       answer:
-        "O relatório é gerado em até 48 horas após o envio do formulário. Você receberá por e-mail um PDF executivo com score, riscos identificados, plano de ação e guias práticos.",
+        "O relatório é gerado em cerca de 2 minutos após o envio do formulário. Você receberá por e-mail um PDF executivo com score, riscos identificados, plano de ação e guias práticos.",
     },
     {
       question: "É realmente gratuito?",
@@ -42,9 +42,9 @@ export function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-16 md:py-20 bg-white">
+    <section id="faq" className="py-[var(--section-padding-mobile)] md:py-[var(--section-padding-desktop)] bg-white">
       <div className="max-w-[800px] mx-auto px-6">
-        <h2 className="text-[24px] md:text-[32px] leading-[32px] md:leading-[40px] font-semibold text-[#1E293B] text-center mb-12">
+        <h2 className="text-[24px] md:text-[32px] leading-[32px] md:leading-[40px] font-semibold text-[var(--text-dark)] text-center mb-12">
           Perguntas Frequentes
         </h2>
 
@@ -52,13 +52,13 @@ export function FAQ() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border border-[#E2E8F0] rounded-xl overflow-hidden"
+              className="border border-[var(--border-light)] rounded-xl overflow-hidden"
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full flex items-center justify-between p-6 text-left bg-white hover:bg-[#F8FAFC] transition-colors"
+                className="w-full flex items-center justify-between p-6 text-left bg-white hover:bg-[var(--bg-light)] transition-colors"
               >
-                <span className="font-semibold text-[#1E293B] pr-4">
+                <span className="font-semibold text-[var(--text-dark)] pr-4">
                   {faq.question}
                 </span>
                 <ChevronDown
@@ -69,7 +69,7 @@ export function FAQ() {
                 />
               </button>
               {openIndex === index && (
-                <div className="px-6 pb-6 text-[#475569] leading-relaxed bg-[#F8FAFC]">
+                <div className="px-6 pb-6 text-[var(--text-body)] leading-relaxed bg-[var(--bg-light)]">
                   {faq.answer}
                 </div>
               )}

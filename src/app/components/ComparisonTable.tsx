@@ -44,41 +44,35 @@ export function ComparisonTable() {
       snyk: "partial",
       codeQuality: "full",
     },
-    {
-      name: "Preço (por dev/mês)",
-      copilot: "~$10-19",
-      snyk: "~$25+",
-      codeQuality: "R$500-2k/team",
-    },
   ];
 
   const renderIcon = (status: string) => {
     if (status === "full") {
-      return <Check className="text-[#16A34A] mx-auto" size={20} />;
+      return <Check className="text-[var(--primary-green)] mx-auto" size={20} />;
     }
     if (status === "partial") {
       return <AlertTriangle className="text-[#D97706] mx-auto" size={20} />;
     }
     if (status === "none") {
-      return <X className="text-[#DC2626] mx-auto" size={20} />;
+      return <X className="text-[var(--error-red)] mx-auto" size={20} />;
     }
-    return <span className="text-[#475569] text-sm">{status}</span>;
+    return <span className="text-[var(--text-muted)] text-sm">{status}</span>;
   };
 
   return (
-    <section className="py-16 md:py-20 bg-white">
-      <div className="max-w-[1200px] mx-auto px-6">
-        <h2 className="text-[24px] md:text-[32px] leading-[32px] md:leading-[40px] font-semibold text-[#1E293B] text-center mb-4">
-          Por Que CodeQuality AI é Diferente?
+    <section className="py-[var(--section-padding-mobile)] md:py-[var(--section-padding-desktop)] bg-white">
+      <div className="max-w-[var(--container-max)] mx-auto px-6">
+        <h2 className="text-[24px] md:text-[32px] leading-[32px] md:leading-[40px] font-semibold text-[var(--text-dark)] text-center mb-4">
+          Por que CodeQuality AI é diferente?
         </h2>
-        <p className="text-center text-[#64748B] mb-12">
+        <p className="text-center text-[var(--text-muted)] mb-12">
           Não competimos com Copilot ou Snyk. Complementamos eles.
         </p>
 
         <div className="overflow-x-auto">
           <table className="w-full border-collapse bg-white rounded-xl overflow-hidden shadow-md">
             <thead>
-              <tr className="bg-[#1E293B]">
+              <tr className="bg-[var(--text-dark)]">
                 <th className="text-left p-4 text-white font-semibold">
                   Capacidade
                 </th>
@@ -88,7 +82,7 @@ export function ComparisonTable() {
                 <th className="text-center p-4 text-white font-semibold">
                   Snyk
                 </th>
-                <th className="text-center p-4 text-white font-semibold bg-[#EFF6FF] text-[#1E293B]">
+                <th className="text-center p-4 font-semibold bg-[var(--primary-green)] text-white">
                   CodeQuality AI
                 </th>
               </tr>
@@ -97,11 +91,11 @@ export function ComparisonTable() {
               {features.map((feature, index) => (
                 <tr
                   key={index}
-                  className={`border-b border-[#E2E8F0] ${
-                    index % 2 === 0 ? "bg-[#F8FAFC]" : "bg-white"
+                  className={`border-b border-[var(--border-light)] ${
+                    index % 2 === 0 ? "bg-[var(--bg-light)]" : "bg-white"
                   }`}
                 >
-                  <td className="p-4 text-[#1E293B] font-medium">
+                  <td className="p-4 text-[var(--text-dark)] font-medium">
                     {feature.name}
                   </td>
                   <td className="p-4 text-center">
@@ -110,7 +104,7 @@ export function ComparisonTable() {
                   <td className="p-4 text-center">
                     {renderIcon(feature.snyk)}
                   </td>
-                  <td className="p-4 text-center bg-[#EFF6FF]/50">
+                  <td className="p-4 text-center bg-[var(--bg-light)]">
                     {renderIcon(feature.codeQuality)}
                   </td>
                 </tr>
@@ -119,11 +113,22 @@ export function ComparisonTable() {
           </table>
         </div>
 
-        <div className="mt-8 bg-[#EFF6FF] border-l-4 border-[#3B82F6] p-6 rounded-lg">
-          <p className="text-[#1E293B] font-medium">
-            ✅ = Nativo | ⚠️ = Parcial | ❌ = Não disponível
-          </p>
-          <p className="text-[#475569] mt-2">
+        <div className="mt-8 bg-[var(--bg-light)] border-l-4 border-[#3B82F6] p-6 rounded-lg">
+          <div className="text-[var(--text-dark)] font-medium flex flex-wrap items-center gap-4">
+            <div className="flex items-center gap-2">
+              <Check className="text-[var(--primary-green)]" size={20} />
+              <span>Nativo</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <AlertTriangle className="text-[#D97706]" size={20} />
+              <span>Parcial</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <X className="text-[var(--error-red)]" size={20} />
+              <span>Não disponível</span>
+            </div>
+          </div>
+          <p className="text-[var(--text-body)] mt-2">
             <strong className="text-[#3B82F6]">CodeQuality AI</strong> preenche
             o gap que Copilot e Snyk deixam: Governança de qualidade +
             visibilidade executiva + capacitação.

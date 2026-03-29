@@ -13,13 +13,13 @@ export function Hero({ onOpenValidationModal }: HeroProps) {
   };
 
   return (
-    <section className="relative bg-gradient-to-br from-[#1E293B] to-[#3B82F6] text-white py-20 md:py-32">
-      <div className="max-w-[1200px] mx-auto px-6">
+    <section className="relative bg-gradient-to-br from-[var(--primary-navy)] to-[#3B82F6] text-white py-[var(--section-padding-mobile)] md:py-[var(--section-padding-desktop)]">
+      <div className="max-w-[var(--container-max)] mx-auto px-6">
         <div className="max-w-[900px] mx-auto text-center">
-          <h1 className="text-[32px] md:text-[48px] leading-[40px] md:leading-[56px] font-semibold mb-6">
-            IA Gera Código Rápido. Seu Time Está Pronto Para Isso?
+          <h1 className="hero-h1 font-semibold mb-6">
+            IA Gera Código Rápido. Seu time está pronto para isso?
           </h1>
-          <h2 className="text-[16px] md:text-[18px] leading-[24px] md:leading-[28px] text-white/90 mb-10">
+          <h2 className="text-[var(--body-size)] md:text-[var(--body-large-size)] leading-[var(--body-height)] md:leading-[var(--body-large-height)] text-white/90 mb-10">
             80% dos devs relatam mais produtividade com IA, mas apenas 43%
             confiam totalmente na qualidade. Descubra em 2 minutos se seu time
             tem a governança necessária para escalar com segurança.
@@ -27,7 +27,7 @@ export function Hero({ onOpenValidationModal }: HeroProps) {
 
           <button
             onClick={scrollToForm}
-            className="bg-[#16A34A] hover:bg-[#15803D] text-white px-8 py-4 rounded-lg text-lg font-semibold mb-12 transition-all hover:shadow-2xl hover:-translate-y-1 inline-flex items-center gap-2"
+            className="bg-[var(--primary-green)] hover:bg-[var(--primary-green-hover)] text-white px-8 py-4 rounded-lg text-lg font-semibold mb-12 transition-all hover:shadow-2xl hover:-translate-y-1 inline-flex items-center gap-2"
           >
             GERAR DIAGNÓSTICO GRATUITO →
           </button>
@@ -90,7 +90,7 @@ export function Hero({ onOpenValidationModal }: HeroProps) {
               </ul>
               <button
                 onClick={onOpenValidationModal}
-                className="border-2 border-[#3B82F6] text-[#3B82F6] bg-transparent hover:bg-[#3B82F6] hover:text-white px-4 py-2.5 rounded-lg font-semibold transition-all text-sm w-full"
+                className="border-2 border-[var(--secondary-button-border)] text-[var(--secondary-button-text)] hover:bg-[var(--secondary-button-hover)] px-4 py-2.5 rounded-lg font-semibold transition-all text-sm w-full"
               >
                 Participe da validação →
               </button>
