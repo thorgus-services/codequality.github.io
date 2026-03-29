@@ -1,7 +1,7 @@
 
-  # B2B SaaS Landing Page
+  # Pilot-B2B SaaS Landing Page
 
-  This is a code bundle for B2B SaaS Landing Page. The original project is available at https://www.figma.com/design/pQoKac5KWM3RVMRyPqcB44/B2B-SaaS-Landing-Page.
+  This is a code bundle for Pilot-B2B SaaS Landing Page. The original project is available at https://www.figma.com/design/333YdQVqKhZilOJ6v6qCxB/Pilot-B2B-SaaS-Landing-Page.
 
   ## Running the code
 
