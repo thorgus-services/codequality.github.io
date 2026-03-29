@@ -1,6 +1,9 @@
 import { Code2, Rocket } from "lucide-react";
+import { useTranslation } from "../context/TranslationContext";
 
 export function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-[var(--text-dark)] text-white py-10">
       <div className="max-w-[var(--container-max)] mx-auto px-6 text-center">
@@ -19,8 +22,7 @@ export function Footer() {
 
         {/* Copyright */}
         <p className="text-sm text-[#94A3B8] mb-4">
-          © 2026 CodeQuality AI • Uma iniciativa Thorgus. Projeto em fase de
-          validação de mercado.
+          {t("footer.copyright")}
         </p>
 
         {/* Email */}
@@ -28,13 +30,12 @@ export function Footer() {
           href="mailto:pilot@thorgus.com"
           className="text-[#3B82F6] hover:underline text-base font-medium inline-block mb-4"
         >
-          pilot@thorgus.com
+          {t("footer.email")}
         </a>
 
         {/* Disclaimer */}
         <p className="text-sm text-[var(--text-muted)] max-w-[800px] mx-auto">
-          Todos os dados coletados são anonimizados e usados exclusivamente para
-          pesquisa e desenvolvimento de produto.
+          {t("footer.disclaimer")}
         </p>
       </div>
     </footer>

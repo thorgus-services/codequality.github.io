@@ -1,13 +1,16 @@
 import { CheckCircle2 } from "lucide-react";
+import { useTranslation } from "../context/TranslationContext";
 
 export function WhatYouGetSection() {
+  const { t } = useTranslation();
+
   const benefits = [
-    "Score de qualidade de IA (0-100)",
-    "Top 3 riscos identificados",
-    "Plano de ação prioritário",
-    "Benchmark anônimo",
-    'Template de PRP com regras de engenharia',
-    'Guia Rápido: "Como revisar código de IA sem ser Sênior"',
+    t("whatYouGetSection.benefits.0"),
+    t("whatYouGetSection.benefits.1"),
+    t("whatYouGetSection.benefits.2"),
+    t("whatYouGetSection.benefits.3"),
+    t("whatYouGetSection.benefits.4"),
+    t("whatYouGetSection.benefits.5"),
   ];
 
   const scrollToForm = () => {
@@ -21,7 +24,7 @@ export function WhatYouGetSection() {
     <section className="py-[var(--section-padding-mobile)] md:py-[var(--section-padding-desktop)] bg-white">
       <div className="max-w-[var(--container-max)] mx-auto px-6">
         <h2 className="text-[24px] md:text-[32px] leading-[32px] md:leading-[40px] font-semibold text-[var(--text-dark)] text-center mb-12">
-          O que você recebe no diagnóstico gratuito
+          {t("whatYouGetSection.title")}
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-[900px] mx-auto mb-12">
@@ -41,7 +44,7 @@ export function WhatYouGetSection() {
             onClick={scrollToForm}
             className="bg-[var(--primary-green)] hover:bg-[var(--primary-green-hover)] text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all hover:shadow-lg hover:-translate-y-1 inline-flex items-center gap-2"
           >
-            GERAR MEU DIAGNÓSTICO →
+            {t("whatYouGetSection.cta")}
           </button>
         </div>
       </div>

@@ -1,53 +1,55 @@
 import { Briefcase, Building2, Code2, Cpu, ExternalLink } from "lucide-react";
+import { useTranslation } from "../context/TranslationContext";
 
 export function AuthoritySection() {
+  const { t } = useTranslation();
+
   const approach = [
     {
       icon: Briefcase,
-      text: "14+ anos de experiência coletiva em engenharia de software",
+      text: t("authoritySection.approach.items.1"),
     },
     {
       icon: Building2,
-      text: "Arquitetura aplicada em ambientes regulados (fintech, saúde, enterprise)",
+      text: t("authoritySection.approach.items.2"),
     },
     {
       icon: Code2,
-      text: "Expertise em padrões: DDD, Arquitetura Hexagonal, Clean Code, TDD",
+      text: t("authoritySection.approach.items.3"),
     },
     {
       icon: Cpu,
-      text: "Integrações production-grade com IA: RAG, crewAI, OpenAI, SSE",
+      text: t("authoritySection.approach.items.4"),
     },
   ];
 
   const technologies = [
-    "Python",
-    "Kotlin",
-    "AWS",
-    "DDD",
-    "Hexagonal",
-    "RAG",
-    "crewAI",
-    "OpenAI",
-    "SSE",
-    "BFF",
+    t("authoritySection.technologies.items.python"),
+    t("authoritySection.technologies.items.kotlin"),
+    t("authoritySection.technologies.items.aws"),
+    t("authoritySection.technologies.items.ddd"),
+    t("authoritySection.technologies.items.hexagonal"),
+    t("authoritySection.technologies.items.rag"),
+    t("authoritySection.technologies.items.crewai"),
+    t("authoritySection.technologies.items.openai"),
+    t("authoritySection.technologies.items.sse"),
+    t("authoritySection.technologies.items.bff"),
   ];
 
   return (
     <section id="autoridade" className="py-[var(--section-padding-mobile)] md:py-[var(--section-padding-desktop)] bg-gradient-to-br from-[var(--bg-light)] to-[var(--bg-gray)]">
       <div className="max-w-[var(--container-max)] mx-auto px-6">
         <h2 className="text-[24px] md:text-[32px] leading-[32px] md:leading-[40px] font-semibold text-[var(--text-dark)] text-center mb-4">
-          🛡️ Desenvolvido por especialistas em engenharia de Software Enterprise
+          {t("authoritySection.title")}
         </h2>
         <p className="text-center text-[var(--text-muted)] mb-12 max-w-[800px] mx-auto">
-          CodeQuality AI é uma iniciativa da Thorgus, aceleradora de negócios
-          com expertise em produtos tech escaláveis.
+          {t("authoritySection.subtitle")}
         </p>
 
         {/* Content Block 1 - Our Approach */}
         <div className="bg-white border border-[var(--border-light)] rounded-xl p-8 mb-8 shadow-md max-w-[900px] mx-auto">
           <h3 className="text-xl font-semibold text-[var(--text-dark)] mb-6">
-            Nossa abordagem combina:
+            {t("authoritySection.approach.title")}
           </h3>
           <ul className="space-y-4">
             {approach.map((item, index) => (
@@ -62,7 +64,7 @@ export function AuthoritySection() {
         {/* Content Block 2 - Technologies Tag Cloud */}
         <div className="bg-white border border-[var(--border-light)] rounded-xl p-8 shadow-md max-w-[900px] mx-auto mb-8">
           <h3 className="text-xl font-semibold text-[var(--text-dark)] mb-6">
-            Tecnologias e padrões que dominamos:
+            {t("authoritySection.technologies.title")}
           </h3>
           <div className="flex flex-wrap gap-2">
             {technologies.map((tech, index) => (
@@ -84,7 +86,7 @@ export function AuthoritySection() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#3B82F6] hover:bg-[var(--primary-navy)] text-white px-8 py-3 rounded-lg font-semibold transition-all hover:shadow-lg hover:-translate-y-1"
           >
-            Conheça a Thorgus
+            {t("authoritySection.cta")}
             <ExternalLink size={18} />
           </a>
         </div>

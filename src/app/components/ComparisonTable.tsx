@@ -1,45 +1,48 @@
 import { Check, X, AlertTriangle } from "lucide-react";
+import { useTranslation } from "../context/TranslationContext";
 
 export function ComparisonTable() {
+  const { t } = useTranslation();
+
   const features = [
     {
-      name: "Geração de código",
+      name: t("comparisonTable.features.1"),
       copilot: "full",
       snyk: "none",
       codeQuality: "partial",
     },
     {
-      name: "Detecção de vulnerabilidades",
+      name: t("comparisonTable.features.2"),
       copilot: "partial",
       snyk: "full",
       codeQuality: "full",
     },
     {
-      name: "Regras de arquitetura",
+      name: t("comparisonTable.features.3"),
       copilot: "none",
       snyk: "none",
       codeQuality: "full",
     },
     {
-      name: "Dashboard executivo",
+      name: t("comparisonTable.features.4"),
       copilot: "none",
       snyk: "none",
       codeQuality: "full",
     },
     {
-      name: "Capacitação do time",
+      name: t("comparisonTable.features.5"),
       copilot: "none",
       snyk: "none",
       codeQuality: "full",
     },
     {
-      name: "Privacy-by-Design",
+      name: t("comparisonTable.features.6"),
       copilot: "partial",
       snyk: "full",
       codeQuality: "full",
     },
     {
-      name: "Deploy on-premise",
+      name: t("comparisonTable.features.7"),
       copilot: "none",
       snyk: "partial",
       codeQuality: "full",
@@ -63,10 +66,10 @@ export function ComparisonTable() {
     <section className="py-[var(--section-padding-mobile)] md:py-[var(--section-padding-desktop)] bg-white">
       <div className="max-w-[var(--container-max)] mx-auto px-6">
         <h2 className="text-[24px] md:text-[32px] leading-[32px] md:leading-[40px] font-semibold text-[var(--text-dark)] text-center mb-4">
-          Por que CodeQuality AI é diferente?
+          {t("comparisonTable.title")}
         </h2>
         <p className="text-center text-[var(--text-muted)] mb-12">
-          Não competimos com Copilot ou Snyk. Complementamos eles.
+          {t("comparisonTable.subtitle")}
         </p>
 
         <div className="overflow-x-auto">
@@ -74,16 +77,16 @@ export function ComparisonTable() {
             <thead>
               <tr className="bg-[var(--text-dark)]">
                 <th className="text-left p-4 text-white font-semibold">
-                  Capacidade
+                  {t("comparisonTable.headers.capability")}
                 </th>
                 <th className="text-center p-4 text-white font-semibold">
-                  Copilot
+                  {t("comparisonTable.headers.copilot")}
                 </th>
                 <th className="text-center p-4 text-white font-semibold">
-                  Snyk
+                  {t("comparisonTable.headers.snyk")}
                 </th>
                 <th className="text-center p-4 font-semibold bg-[var(--primary-green)] text-white">
-                  CodeQuality AI
+                  {t("comparisonTable.headers.codeQuality")}
                 </th>
               </tr>
             </thead>
@@ -117,21 +120,19 @@ export function ComparisonTable() {
           <div className="text-[var(--text-dark)] font-medium flex flex-wrap items-center gap-4">
             <div className="flex items-center gap-2">
               <Check className="text-[var(--primary-green)]" size={20} />
-              <span>Nativo</span>
+              <span>{t("comparisonTable.legend.native")}</span>
             </div>
             <div className="flex items-center gap-2">
               <AlertTriangle className="text-[#D97706]" size={20} />
-              <span>Parcial</span>
+              <span>{t("comparisonTable.legend.partial")}</span>
             </div>
             <div className="flex items-center gap-2">
               <X className="text-[var(--error-red)]" size={20} />
-              <span>Não disponível</span>
+              <span>{t("comparisonTable.legend.notAvailable")}</span>
             </div>
           </div>
           <p className="text-[var(--text-body)] mt-2">
-            <strong className="text-[#3B82F6]">CodeQuality AI</strong> preenche
-            o gap que Copilot e Snyk deixam: Governança de qualidade +
-            visibilidade executiva + capacitação.
+            {t("comparisonTable.note")}
           </p>
         </div>
       </div>

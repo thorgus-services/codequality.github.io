@@ -1,0 +1,320 @@
+{
+  "header": {
+    "nav": {
+      "howItWorks": "Como Funciona",
+      "authority": "Autoridade",
+      "faq": "FAQ",
+      "generateDiagnosis": "Gerar Diagnóstico"
+    },
+    "logo": "CodeQuality AI"
+  },
+  "hero": {
+    "title": "IA Gera Código Rápido. Seu time está pronto para isso?",
+    "subtitle": "80% dos devs relatam mais produtividade com IA, mas apenas 43% confiam totalmente na qualidade. Descubra em 2 minutos se seu time tem a governança necessária para escalar com segurança.",
+    "cta": "GERAR DIAGNÓSTICO GRATUITO →",
+    "privacyBadge": {
+      "title": "🔐 Privacy-by-Design",
+      "description": "Seu código está protegido",
+      "items": {
+        "1": "Seu código nunca é usado para treinar modelos externos",
+        "2": "Anonimização automática de dados sensíveis",
+        "3": "Relatório 100% confidencial"
+      }
+    },
+    "developmentBadge": {
+      "title": "🔬 Em Desenvolvimento Ativo",
+      "description": "CodeQuality AI está sendo construído com base em:",
+      "items": {
+        "1": "Pesquisa de mercado com líderes de engenharia de PMEs tech",
+        "2": "Princípios de engenharia validados em ambientes enterprise",
+        "3": "Metodologias de governança de IA em evolução contínua"
+      },
+      "cta": "Participe da validação →"
+    }
+  },
+  "problemSection": {
+    "title": "O Custo Oculto da IA no Desenvolvimento de Software",
+    "painPoints": {
+      "1": {
+        "title": "📉 CONFIANÇA BAIXA",
+        "description": "43% dos desenvolvedores não confiam totalmente no código gerado por IA. Resultado: revisão manual excessiva ou, pior, deploy sem validação adequada.",
+        "impact": "Bugs em produção + retrabalho não medido"
+      },
+      "2": {
+        "title": "🎓 FALTA DE CAPACITAÇÃO",
+        "description": "42% das empresas não investem em treinamento de IA. Times de alto desempenho investem 57% em capacitação, vs. apenas 20% dos de baixo desempenho.",
+        "impact": "Subutilização da ferramenta + resistência cultural"
+      },
+      "3": {
+        "title": "🛡️ RISCO DE SEGURANÇA E PRIVACIDADE",
+        "description": "40% dos líderes citam segurança como preocupação principal. Código sensível pode vazar para modelos externos sem controles adequados de governança.",
+        "impact": "Multas (LGPD), vazamentos, perda de confiança"
+      }
+    },
+    "stat": "64% dos CEOs afirmam: o sucesso da IA depende mais das PESSOAS do que da tecnologia.",
+    "source": "(Fonte: IBM Study 2024)"
+  },
+  "solutionSection": {
+    "title": "CodeQuality AI não substitui seu time. Empodera ele.",
+    "pillars": {
+      "1": {
+        "title": "GOVERNANÇA DE QUALIDADE",
+        "description": "Regras automatizadas de DDD, Clean Code, TDD e Arquitetura Hexagonal aplicadas em código gerado por IA.",
+        "benefit": "Redução de ~30% no tempo de revisão de código"
+      },
+      "2": {
+        "title": "VISIBILIDADE PARA DECISORES",
+        "description": "Dashboards executivos que traduzem qualidade técnica em métricas de negócio (ROI, risco, time-to-market).",
+        "benefit": "CEO/GPM entende o impacto sem jargão técnico"
+      },
+      "3": {
+        "title": "PRIVACY-BY-DESIGN",
+        "description": "Anonimização automática, criptografia e opção de deploy on-premise para ambientes regulados (fintech, saúde, gov).",
+        "benefit": "Conformidade LGPD desde o primeiro dia"
+      },
+      "4": {
+        "title": "CAPACITAÇÃO INTEGRADA",
+        "description": "Guias rápidos, templates de PRP e workshops de onboarding para elevar a maturidade do time em IA.",
+        "benefit": "57% mais investimento em treinamento = alto desempenho"
+      }
+    }
+  },
+  "comparisonTable": {
+    "title": "Por que CodeQuality AI é diferente?",
+    "subtitle": "Não competimos com Copilot ou Snyk. Complementamos eles.",
+    "headers": {
+      "capability": "Capacidade",
+      "copilot": "Copilot",
+      "snyk": "Snyk",
+      "codeQuality": "CodeQuality AI"
+    },
+    "legend": {
+      "native": "Nativo",
+      "partial": "Parcial",
+      "notAvailable": "Não disponível"
+    },
+    "note": "CodeQuality AI preenche o gap que Copilot e Snyk deixam: Governança de qualidade + visibilidade executiva + capacitação.",
+    "features": {
+      "1": "Geração de código",
+      "2": "Detecção de vulnerabilidades",
+      "3": "Regras de arquitetura",
+      "4": "Dashboard executivo",
+      "5": "Capacitação do time",
+      "6": "Privacy-by-Design",
+      "7": "Deploy on-premise"
+    }
+  },
+  "authoritySection": {
+    "title": "🛡️ Desenvolvido por Especialistas em Engenharia de Software Enterprise",
+    "subtitle": "CodeQuality AI é uma iniciativa da Thorgus, aceleradora de negócios com expertise em produtos tech escaláveis.",
+    "approach": {
+      "title": "Nossa abordagem combina:",
+      "items": {
+        "1": "14+ anos de experiência coletiva em engenharia de software",
+        "2": "Arquitetura aplicada em ambientes regulados (fintech, saúde, enterprise)",
+        "3": "Expertise em padrões: DDD, Arquitetura Hexagonal, Clean Code, TDD",
+        "4": "Integrações production-grade com IA: RAG, crewAI, OpenAI, SSE"
+      }
+    },
+    "technologies": {
+      "title": "Tecnologias e padrões que dominamos:",
+      "items": {
+        "python": "Python",
+        "kotlin": "Kotlin",
+        "aws": "AWS",
+        "ddd": "DDD",
+        "hexagonal": "Arquitetura Hexagonal",
+        "rag": "RAG",
+        "crewai": "crewAI",
+        "openai": "OpenAI",
+        "sse": "SSE",
+        "bff": "BFF"
+      }
+    },
+    "cta": "Conheça a Thorgus"
+  },
+  "whatYouGetSection": {
+    "title": "O que você recebe no diagnóstico gratuito",
+    "benefits": {
+      "0": "Score de qualidade de IA (0-100)",
+      "1": "Top 3 riscos identificados",
+      "2": "Plano de ação prioritário",
+      "3": "Benchmark anônimo",
+      "4": "Template de PRP com regras de engenharia",
+      "5": "Guia Rápido: \"Como revisar código de IA sem ser Sênior\""
+    },
+    "cta": "GERAR MEU DIAGNÓSTICO →"
+  },
+  "qualificationForm": {
+    "title": "Responda 7 perguntas para gerar seu diagnóstico",
+    "subtitle": "Análise personalizada em 2 minutos",
+    "fields": {
+      "name": {
+        "label": "Nome Completo *",
+        "placeholder": "Seu nome completo"
+      },
+      "email": {
+        "label": "E-mail Corporativo *",
+        "placeholder": "seu@empresa.com"
+      },
+      "role": {
+        "label": "Cargo *",
+        "placeholder": "Selecione seu cargo",
+        "options": {
+          "ceo": "CEO/Founder",
+          "cto": "CTO",
+          "vp": "VP Engenharia",
+          "gpm": "GPM",
+          "techlead": "Tech Lead",
+          "other": "Outro"
+        }
+      },
+      "teamSize": {
+        "label": "Tamanho do Time de Engenharia *",
+        "placeholder": "Selecione o tamanho",
+        "options": {
+          "1-5": "1-5 devs",
+          "6-15": "6-15 devs",
+          "16-50": "16-50 devs",
+          "50+": "50+ devs"
+        }
+      },
+      "usesAI": {
+        "label": "Seu time usa IA para gerar código? *",
+        "options": {
+          "widely": "Sim, amplamente",
+          "occasionally": "Sim, pontualmente",
+          "planning": "Não, mas planeja",
+          "no": "Não"
+        }
+      },
+      "reviewHours": {
+        "label": "Horas/semana revisando código gerado por IA *",
+        "placeholder": "Selecione",
+        "options": {
+          "none": "Não revisamos",
+          "<1h": "<1h por semana",
+          "1-5h": "1-5h por semana",
+          "5-10h": "5-10h por semana",
+          "10-20h": "10-20h por semana",
+          ">20h": ">20h por semana"
+        }
+      },
+      "bugs": {
+        "label": "Bugs em produção (último trimestre) *",
+        "placeholder": "Selecione",
+        "options": {
+          "none": "Nenhum",
+          "1-3": "1-3 bugs",
+          "4-10": "4-10 bugs",
+          "11-20": "11-20 bugs",
+          ">20": ">20 bugs",
+          "not-measured": "Não medimos"
+        }
+      },
+      "features": {
+        "label": "Features entregues por sprint (média) *",
+        "placeholder": "Selecione",
+        "options": {
+          "<3": "<3 features",
+          "3-5": "3-5 features",
+          "6-10": "6-10 features",
+          "11-15": "11-15 features",
+          ">15": ">15 features",
+          "not-measured": "Não medimos"
+        }
+      },
+      "mainConcern": {
+        "label": "Sua maior preocupação hoje *",
+        "placeholder": "Selecione",
+        "options": {
+          "quality": "Qualidade do código",
+          "security": "Segurança",
+          "compliance": "Conformidade regulatória",
+          "tech-debt": "Dívida técnica",
+          "training": "Treinamento do time",
+          "other": "Outro"
+        }
+      },
+      "codeRestrictions": {
+        "label": "Sua empresa tem restrições para enviar código a APIs externas? *",
+        "options": {
+          "strict": "Sim, restrições rígidas",
+          "moderate": "Sim, restrições moderadas",
+          "no": "Não",
+          "unknown": "Não sei"
+        }
+      },
+      "canContact": {
+        "label": "Sim, quero otimizar meu resultado e receber recomendações personalizadas"
+      }
+    },
+    "cta": "GERAR DIAGNÓSTICO GRATUITO →",
+    "privacyNote": "🔐 Seus dados estão seguros. Não enviamos spam. Código-fonte NÃO é coletado.",
+    "successMessage": "Diagnóstico gerado com sucesso! Você receberá os resultados em breve."
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "questions": {
+      "1": {
+        "question": "CodeQuality AI substitui GitHub Copilot?",
+        "answer": "Não! Somos complementares. Copilot gera código, nós garantimos que esse código siga padrões de qualidade (DDD, Clean Code, arquitetura) e fornecemos visibilidade executiva sobre os riscos e benefícios da IA no seu time."
+      },
+      "2": {
+        "question": "Vocês armazenam ou usam nosso código?",
+        "answer": "NÃO. Implementamos Privacy-by-Design desde o primeiro dia. Seu código-fonte nunca é coletado, armazenado ou usado para treinar modelos. Apenas métricas agregadas e anonimizadas são processadas para gerar seu diagnóstico."
+      },
+      "3": {
+        "question": "Funciona para setores regulados (fintech, saúde, gov)?",
+        "answer": "Sim! Oferecemos opção de deploy on-premise, criptografia end-to-end e conformidade LGPD nativa. Perfeito para ambientes com restrições rígidas de dados sensíveis."
+      },
+      "4": {
+        "question": "Quanto tempo para receber o diagnóstico?",
+        "answer": "O relatório é gerado em cerca de 2 minutos após o envio do formulário. Você receberá por e-mail um PDF executivo com score, riscos identificados, plano de ação e guias práticos."
+      },
+      "5": {
+        "question": "É realmente gratuito?",
+        "answer": "Sim, o diagnóstico inicial é 100% gratuito e sem compromisso. Estamos em fase de validação e buscando feedback de líderes técnicos para aprimorar nosso produto. Se quiser implementar a solução completa, conversaremos sobre planos pagos depois."
+      },
+      "6": {
+        "question": "Vocês oferecem treinamento?",
+        "answer": "Sim! Além da plataforma de governança, oferecemos workshops de onboarding, templates de PRP (Pull Request Protocol) e guias rápidos para capacitar todo o time — de júnior a senior — a trabalhar com segurança usando IA generativa."
+      }
+    }
+  },
+  "validationModal": {
+    "title": "Participe da Validação",
+    "subtitle": "Ajude a construir a solução certa para o mercado",
+    "fields": {
+      "name": {
+        "label": "Seu nome *",
+        "placeholder": "Digite seu nome completo"
+      },
+      "email": {
+        "label": "E-mail corporativo *",
+        "placeholder": "seu@empresa.com"
+      },
+      "interest": {
+        "label": "Tenho interesse em...",
+        "placeholder": "Selecione uma opção",
+        "options": {
+          "pilot": "Participar do pilot gratuito",
+          "feedback": "Dar feedback sobre a ideia",
+          "partnership": "Explorar parceria com minha comunidade"
+        }
+      }
+    },
+    "cta": "Enviar →",
+    "privacyNote": "🔐 Seus dados estão seguros. Não enviamos spam.",
+    "successMessage": "Obrigado! Entraremos em contato em breve."
+  },
+  "footer": {
+    "copyright": "© 2026 CodeQuality AI • Uma iniciativa Thorgus. Projeto em fase de validação de mercado.",
+    "email": "pilot@thorgus.com",
+    "disclaimer": "Todos os dados coletados são anonimizados e usados exclusivamente para pesquisa e desenvolvimento de produto."
+  },
+  "languageSelector": {
+    "portuguese": "Português",
+    "english": "English"
+  }
+}

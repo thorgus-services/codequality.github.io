@@ -1,0 +1,320 @@
+{
+  "header": {
+    "nav": {
+      "howItWorks": "How It Works",
+      "authority": "Authority",
+      "faq": "FAQ",
+      "generateDiagnosis": "Generate Diagnosis"
+    },
+    "logo": "CodeQuality AI"
+  },
+  "hero": {
+    "title": "AI Generates Code Fast. Is your team ready for it?",
+    "subtitle": "80% of devs report higher productivity with AI, but only 43% fully trust the quality. Discover in 2 minutes if your team has the governance needed to scale safely.",
+    "cta": "GENERATE FREE DIAGNOSIS →",
+    "privacyBadge": {
+      "title": "🔐 Privacy-by-Design",
+      "description": "Your code is protected",
+      "items": {
+        "1": "Your code is never used to train external models",
+        "2": "Automatic anonymization of sensitive data",
+        "3": "100% confidential report"
+      }
+    },
+    "developmentBadge": {
+      "title": "🔬 In Active Development",
+      "description": "CodeQuality AI is being built based on:",
+      "items": {
+        "1": "Market research with engineering leaders from tech SMEs",
+        "2": "Engineering principles validated in enterprise environments",
+        "3": "AI governance methodologies in continuous evolution"
+      },
+      "cta": "Join the validation →"
+    }
+  },
+  "problemSection": {
+    "title": "The Hidden Cost of AI in Software Development",
+    "painPoints": {
+      "1": {
+        "title": "📉 LOW TRUST",
+        "description": "43% of developers don't fully trust AI-generated code. Result: excessive manual review or, worse, deployment without proper validation.",
+        "impact": "Bugs in production + unmeasured rework"
+      },
+      "2": {
+        "title": "🎓 LACK OF TRAINING",
+        "description": "42% of companies don't invest in AI training. High-performing teams invest 57% in training, vs. only 20% of low performers.",
+        "impact": "Tool underutilization + cultural resistance"
+      },
+      "3": {
+        "title": "🛡️ SECURITY AND PRIVACY RISK",
+        "description": "40% of leaders cite security as their main concern. Sensitive code can leak to external models without adequate governance controls.",
+        "impact": "Fines (LGPD/GDPR), leaks, loss of trust"
+      }
+    },
+    "stat": "64% of CEOs state: AI success depends more on PEOPLE than technology.",
+    "source": "(Source: IBM Study 2024)"
+  },
+  "solutionSection": {
+    "title": "CodeQuality AI doesn't replace your team. It empowers them.",
+    "pillars": {
+      "1": {
+        "title": "QUALITY GOVERNANCE",
+        "description": "Automated rules of DDD, Clean Code, TDD and Hexagonal Architecture applied to AI-generated code.",
+        "benefit": "~30% reduction in code review time"
+      },
+      "2": {
+        "title": "VISIBILITY FOR DECISION MAKERS",
+        "description": "Executive dashboards that translate technical quality into business metrics (ROI, risk, time-to-market).",
+        "benefit": "CEO/GPM understands impact without technical jargon"
+      },
+      "3": {
+        "title": "PRIVACY-BY-DESIGN",
+        "description": "Automatic anonymization, encryption and on-premise deployment option for regulated environments (fintech, healthcare, gov).",
+        "benefit": "LGPD/GDPR compliance from day one"
+      },
+      "4": {
+        "title": "INTEGRATED TRAINING",
+        "description": "Quick guides, PRP templates and onboarding workshops to elevate team maturity in AI.",
+        "benefit": "57% more investment in training = high performance"
+      }
+    }
+  },
+  "comparisonTable": {
+    "title": "Why is CodeQuality AI different?",
+    "subtitle": "We don't compete with Copilot or Snyk. We complement them.",
+    "headers": {
+      "capability": "Capability",
+      "copilot": "Copilot",
+      "snyk": "Snyk",
+      "codeQuality": "CodeQuality AI"
+    },
+    "legend": {
+      "native": "Native",
+      "partial": "Partial",
+      "notAvailable": "Not available"
+    },
+    "note": "CodeQuality AI fills the gap that Copilot and Snyk leave: Quality governance + executive visibility + training.",
+    "features": {
+      "1": "Code generation",
+      "2": "Vulnerability detection",
+      "3": "Architecture rules",
+      "4": "Executive dashboard",
+      "5": "Team training",
+      "6": "Privacy-by-Design",
+      "7": "On-premise deployment"
+    }
+  },
+  "authoritySection": {
+    "title": "🛡️ Built by Enterprise Software Engineering Experts",
+    "subtitle": "CodeQuality AI is a Thorgus initiative, a business accelerator with expertise in scalable tech products.",
+    "approach": {
+      "title": "Our approach combines:",
+      "items": {
+        "1": "14+ years of collective experience in software engineering",
+        "2": "Architecture applied in regulated environments (fintech, healthcare, enterprise)",
+        "3": "Expertise in standards: DDD, Hexagonal Architecture, Clean Code, TDD",
+        "4": "Production-grade AI integrations: RAG, crewAI, OpenAI, SSE"
+      }
+    },
+    "technologies": {
+      "title": "Technologies and standards we master:",
+      "items": {
+        "python": "Python",
+        "kotlin": "Kotlin",
+        "aws": "AWS",
+        "ddd": "DDD",
+        "hexagonal": "Hexagonal Architecture",
+        "rag": "RAG",
+        "crewai": "crewAI",
+        "openai": "OpenAI",
+        "sse": "SSE",
+        "bff": "BFF"
+      }
+    },
+    "cta": "Meet Thorgus"
+  },
+  "whatYouGetSection": {
+    "title": "What you get in the free diagnosis",
+    "benefits": {
+      "0": "AI quality score (0-100)",
+      "1": "Top 3 identified risks",
+      "2": "Priority action plan",
+      "3": "Anonymous benchmark",
+      "4": "PRP template with engineering rules",
+      "5": "Quick guide: \"How to review AI code without being senior\""
+    },
+    "cta": "GENERATE MY DIAGNOSIS →"
+  },
+  "qualificationForm": {
+    "title": "Answer 7 questions to generate your diagnosis",
+    "subtitle": "Personalized analysis in 2 minutes",
+    "fields": {
+      "name": {
+        "label": "Full Name *",
+        "placeholder": "Your full name"
+      },
+      "email": {
+        "label": "Corporate Email *",
+        "placeholder": "your@company.com"
+      },
+      "role": {
+        "label": "Role *",
+        "placeholder": "Select your role",
+        "options": {
+          "ceo": "CEO/Founder",
+          "cto": "CTO",
+          "vp": "VP Engineering",
+          "gpm": "GPM",
+          "techlead": "Tech Lead",
+          "other": "Other"
+        }
+      },
+      "teamSize": {
+        "label": "Engineering Team Size *",
+        "placeholder": "Select size",
+        "options": {
+          "1-5": "1-5 devs",
+          "6-15": "6-15 devs",
+          "16-50": "16-50 devs",
+          "50+": "50+ devs"
+        }
+      },
+      "usesAI": {
+        "label": "Does your team use AI to generate code? *",
+        "options": {
+          "widely": "Yes, widely",
+          "occasionally": "Yes, occasionally",
+          "planning": "No, but planning to",
+          "no": "No"
+        }
+      },
+      "reviewHours": {
+        "label": "Hours/week reviewing AI-generated code *",
+        "placeholder": "Select",
+        "options": {
+          "none": "We don't review",
+          "<1h": "<1h per week",
+          "1-5h": "1-5h per week",
+          "5-10h": "5-10h per week",
+          "10-20h": "10-20h per week",
+          ">20h": ">20h per week"
+        }
+      },
+      "bugs": {
+        "label": "Bugs in production (last quarter) *",
+        "placeholder": "Select",
+        "options": {
+          "none": "None",
+          "1-3": "1-3 bugs",
+          "4-10": "4-10 bugs",
+          "11-20": "11-20 bugs",
+          ">20": ">20 bugs",
+          "not-measured": "We don't measure"
+        }
+      },
+      "features": {
+        "label": "Features delivered per sprint (average) *",
+        "placeholder": "Select",
+        "options": {
+          "<3": "<3 features",
+          "3-5": "3-5 features",
+          "6-10": "6-10 features",
+          "11-15": "11-15 features",
+          ">15": ">15 features",
+          "not-measured": "We don't measure"
+        }
+      },
+      "mainConcern": {
+        "label": "Your biggest concern today *",
+        "placeholder": "Select",
+        "options": {
+          "quality": "Code quality",
+          "security": "Security",
+          "compliance": "Regulatory compliance",
+          "tech-debt": "Technical debt",
+          "training": "Team training",
+          "other": "Other"
+        }
+      },
+      "codeRestrictions": {
+        "label": "Does your company have restrictions on sending code to external APIs? *",
+        "options": {
+          "strict": "Yes, strict restrictions",
+          "moderate": "Yes, moderate restrictions",
+          "no": "No",
+          "unknown": "I don't know"
+        }
+      },
+      "canContact": {
+        "label": "Yes, I want to optimize my result and receive personalized recommendations"
+      }
+    },
+    "cta": "GENERATE FREE DIAGNOSIS →",
+    "privacyNote": "🔐 Your data is secure. We don't send spam. Source code is NOT collected.",
+    "successMessage": "Diagnosis generated successfully! You will receive the results soon."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": {
+      "1": {
+        "question": "Does CodeQuality AI replace GitHub Copilot?",
+        "answer": "No! We're complementary. Copilot generates code, we ensure that code follows quality standards (DDD, Clean Code, architecture) and we provide executive visibility into the risks and benefits of AI in your team."
+      },
+      "2": {
+        "question": "Do you store or use our code?",
+        "answer": "NO. We implement Privacy-by-Design from day one. Your source code is never collected, stored or used to train models. Only aggregated and anonymized metrics are processed to generate your diagnosis."
+      },
+      "3": {
+        "question": "Does it work for regulated sectors (fintech, healthcare, gov)?",
+        "answer": "Yes! We offer on-premise deployment option, end-to-end encryption and native LGPD/GDPR compliance. Perfect for environments with strict sensitive data restrictions."
+      },
+      "4": {
+        "question": "How long to receive the diagnosis?",
+        "answer": "The report is generated within about 2 minutes after submitting the form. You will receive an executive PDF with score, identified risks, action plan and practical guides via email."
+      },
+      "5": {
+        "question": "Is it really free?",
+        "answer": "Yes, the initial diagnosis is 100% free and without commitment. We're in validation phase and seeking feedback from technical leaders to improve our product. If you want to implement the complete solution, we'll discuss paid plans later."
+      },
+      "6": {
+        "question": "Do you offer training?",
+        "answer": "Yes! In addition to the governance platform, we offer onboarding workshops, PRP (Pull Request Protocol) templates and quick guides to capacitate your entire team — from junior to senior — to work safely using generative AI."
+      }
+    }
+  },
+  "validationModal": {
+    "title": "Join the Validation",
+    "subtitle": "Help build the right solution for the market",
+    "fields": {
+      "name": {
+        "label": "Your name *",
+        "placeholder": "Enter your full name"
+      },
+      "email": {
+        "label": "Corporate email *",
+        "placeholder": "your@company.com"
+      },
+      "interest": {
+        "label": "I'm interested in...",
+        "placeholder": "Select an option",
+        "options": {
+          "pilot": "Join the free pilot",
+          "feedback": "Give feedback on the idea",
+          "partnership": "Explore partnership with my community"
+        }
+      }
+    },
+    "cta": "Send →",
+    "privacyNote": "🔐 Your data is secure. We don't send spam.",
+    "successMessage": "Thank you! We'll be in touch soon."
+  },
+  "footer": {
+    "copyright": "© 2026 CodeQuality AI • A Thorgus initiative. Project in market validation phase.",
+    "email": "pilot@thorgus.com",
+    "disclaimer": "All collected data is anonymized and used exclusively for product research and development."
+  },
+  "languageSelector": {
+    "portuguese": "Português",
+    "english": "English"
+  }
+}

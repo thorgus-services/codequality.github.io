@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { X } from "lucide-react";
+import { useTranslation } from "../context/TranslationContext";
 
 interface ValidationModalProps {
   isOpen: boolean;
@@ -7,6 +8,7 @@ interface ValidationModalProps {
 }
 
 export function ValidationModal({ isOpen, onClose }: ValidationModalProps) {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -16,7 +18,7 @@ export function ValidationModal({ isOpen, onClose }: ValidationModalProps) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Validation form submitted:", formData);
-    alert("Obrigado! Entraremos em contato em breve.");
+    alert(t("validationModal.successMessage"));
     onClose();
     setFormData({ name: "", email: "", interest: "" });
   };
@@ -53,10 +55,10 @@ export function ValidationModal({ isOpen, onClose }: ValidationModalProps) {
 
         {/* Modal Header */}
         <h2 className="text-2xl font-semibold text-[var(--text-dark)] mb-2">
-          Participe da Validação
+          {t("validationModal.title")}
         </h2>
         <p className="text-[var(--text-muted)] mb-6">
-          Ajude a construir a solução certa para o mercado
+          {t("validationModal.subtitle")}
         </p>
 
         {/* Form */}
@@ -67,7 +69,7 @@ export function ValidationModal({ isOpen, onClose }: ValidationModalProps) {
               htmlFor="modal-name"
               className="block text-sm font-medium text-[var(--text-dark)] mb-2"
             >
-              Seu nome *
+              {t("validationModal.fields.name.label")}
             </label>
             <input
               type="text"
@@ -76,7 +78,7 @@ export function ValidationModal({ isOpen, onClose }: ValidationModalProps) {
               required
               value={formData.name}
               onChange={handleChange}
-              placeholder="Digite seu nome completo"
+              placeholder={t("validationModal.fields.name.placeholder")}
               className="w-full h-12 px-4 border border-[var(--border-light)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent text-base"
             />
           </div>
@@ -87,7 +89,7 @@ export function ValidationModal({ isOpen, onClose }: ValidationModalProps) {
               htmlFor="modal-email"
               className="block text-sm font-medium text-[var(--text-dark)] mb-2"
             >
-              E-mail corporativo *
+              {t("validationModal.fields.email.label")}
             </label>
             <input
               type="email"
@@ -96,7 +98,7 @@ export function ValidationModal({ isOpen, onClose }: ValidationModalProps) {
               required
               value={formData.email}
               onChange={handleChange}
-              placeholder="seu@empresa.com"
+              placeholder={t("validationModal.fields.email.placeholder")}
               className="w-full h-12 px-4 border border-[var(--border-light)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent text-base"
             />
           </div>
@@ -107,7 +109,7 @@ export function ValidationModal({ isOpen, onClose }: ValidationModalProps) {
               htmlFor="modal-interest"
               className="block text-sm font-medium text-[var(--text-dark)] mb-2"
             >
-              Tenho interesse em...
+              {t("validationModal.fields.interest.label")}
             </label>
             <select
               id="modal-interest"
@@ -117,12 +119,10 @@ export function ValidationModal({ isOpen, onClose }: ValidationModalProps) {
               onChange={handleChange}
               className="w-full h-12 px-4 border border-[var(--border-light)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent bg-white text-base"
             >
-              <option value="">Selecione uma opção</option>
-              <option value="pilot">Participar do projeto piloto gratuito</option>
-              <option value="feedback">Dar feedback sobre a ideia</option>
-              <option value="partnership">
-                Explorar parceria com minha comunidade
-              </option>
+              <option value="">{t("validationModal.fields.interest.placeholder")}</option>
+              <option value="pilot">{t("validationModal.fields.interest.options.pilot")}</option>
+              <option value="feedback">{t("validationModal.fields.interest.options.feedback")}</option>
+              <option value="partnership">{t("validationModal.fields.interest.options.partnership")}</option>
             </select>
           </div>
 
@@ -131,12 +131,12 @@ export function ValidationModal({ isOpen, onClose }: ValidationModalProps) {
             type="submit"
             className="w-full bg-[#3B82F6] hover:bg-[#2563EB] text-white py-3 rounded-lg font-semibold transition-all hover:shadow-lg hover:-translate-y-0.5"
           >
-            Enviar →
+            {t("validationModal.cta")}
           </button>
 
           {/* Privacy Note */}
           <p className="text-sm text-[var(--text-muted)] text-center">
-            🔐 Seus dados estão seguros. Não enviamos spam.
+            {t("validationModal.privacyNote")}
           </p>
         </form>
       </div>

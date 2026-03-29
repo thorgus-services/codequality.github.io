@@ -16,19 +16,22 @@
 ✅ --bg-gray: #EDF2F7
 ✅ --border-light: #E2E8F0
 ✅ --error-red: #E53E3E
+✅ --secondary-button-border: rgba(255, 255, 255, 0.5)
+✅ --secondary-button-text: #FFFFFF
+✅ --secondary-button-hover: rgba(255, 255, 255, 0.1)
 ```
 
-**Location:** `/src/styles/theme.css` (lines 7-18)
+**Location:** `/src/styles/theme.css` (lines 7-21)
 
 ---
 
 ### TYPOGRAPHY - All Implemented
 
 ```css
-✅ --h1-desktop-size: 56px
-✅ --h1-desktop-height: 64px (line-height)
-✅ --h1-mobile-size: 40px
-✅ --h1-mobile-height: 48px (line-height)
+✅ --h1-desktop-size: 48px
+✅ --h1-desktop-height: 56px (line-height)
+✅ --h1-mobile-size: 32px
+✅ --h1-mobile-height: 40px (line-height)
 
 ✅ --h2-desktop-size: 32px
 ✅ --h2-desktop-height: 40px (line-height)
@@ -52,7 +55,7 @@
 - Semibold: 600 (via Tailwind class `font-semibold`)
 - Regular: 400 (default)
 
-**Location:** `/src/styles/theme.css` (lines 20-35)
+**Location:** `/src/styles/theme.css` (lines 23-38)
 
 ---
 
@@ -66,7 +69,34 @@
 ✅ --element-spacing: 16px
 ```
 
-**Location:** `/src/styles/theme.css` (lines 37-41)
+**Location:** `/src/styles/theme.css` (lines 40-44)
+
+---
+
+## 🌍 Internationalization (i18n)
+
+### Supported Languages
+- ✅ Portuguese (pt-BR) - Default
+- ✅ English (en-US)
+
+### Implementation
+- **Translation Context:** `/src/app/context/TranslationContext.tsx`
+- **Translation Files:**
+  - `/src/locales/pt.json`
+  - `/src/locales/en.json`
+- **Language Persistence:** localStorage
+- **Language Selector:** Header component with flag icons (🇧🇷 🇺🇸)
+
+### Usage
+```tsx
+import { useTranslation } from "../context/TranslationContext";
+
+const { t, language, setLanguage } = useTranslation();
+
+// Usage in components
+<h1>{t("hero.title")}</h1>
+<button onClick={() => setLanguage("en")}>English</button>
+```
 
 ---
 
@@ -79,7 +109,7 @@
    - `text-[var(--text-dark)]` → Uses --text-dark
    - `bg-primary-green` → Uses --color-primary-green (Tailwind shortcut)
 
-2. **Current Implementation**: All components now use CSS variables from the Design System:
+2. **Current Implementation**: All components use CSS variables from the Design System:
    - `var(--primary-navy)` = #1A365D ✅
    - `var(--primary-green)` = #10B981 ✅
    - `var(--primary-green-hover)` = #059669 ✅
@@ -90,8 +120,11 @@
    - `var(--bg-gray)` = #EDF2F7 ✅
    - `var(--border-light)` = #E2E8F0 ✅
    - `var(--error-red)` = #E53E3E ✅
+   - `var(--secondary-button-border)` = rgba(255, 255, 255, 0.5) ✅
+   - `var(--secondary-button-text)` = #FFFFFF ✅
+   - `var(--secondary-button-hover)` = rgba(255, 255, 255, 0.1) ✅
 
-3. **Typography Scale**: Implemented through CSS variables:
+3. **Typography Scale**: Implemented through CSS variables with `.hero-h1` class:
    - H1 Desktop: `text-[var(--h1-desktop-size)]` with `leading-[var(--h1-desktop-height)]`
    - H1 Mobile: `text-[var(--h1-mobile-size)]` with `leading-[var(--h1-mobile-height)]`
    - H2 Desktop: `text-[var(--h2-desktop-size)]` with `leading-[var(--h2-desktop-height)]`
@@ -110,21 +143,21 @@
 
 ## Components Updated
 
-All components have been updated to use Design System variables:
+All components have been updated to use Design System variables and support i18n:
 
-| Component | Status |
-|-----------|--------|
-| Hero.tsx | ✅ Compliant |
-| ProblemSection.tsx | ✅ Compliant |
-| SolutionSection.tsx | ✅ Compliant |
-| AuthoritySection.tsx | ✅ Compliant |
-| WhatYouGetSection.tsx | ✅ Compliant |
-| QualificationForm.tsx | ✅ Compliant |
-| FAQ.tsx | ✅ Compliant |
-| Header.tsx | ✅ Compliant |
-| Footer.tsx | ✅ Compliant |
-| ValidationModal.tsx | ✅ Compliant |
-| ComparisonTable.tsx | ✅ Compliant |
+| Component | Design System | i18n Ready |
+|-----------|--------------|------------|
+| Hero.tsx | ✅ Compliant | ✅ Translated |
+| ProblemSection.tsx | ✅ Compliant | ✅ Translated |
+| SolutionSection.tsx | ✅ Compliant | ✅ Translated |
+| AuthoritySection.tsx | ✅ Compliant | ✅ Translated |
+| WhatYouGetSection.tsx | ✅ Compliant | ✅ Translated |
+| QualificationForm.tsx | ✅ Compliant | ✅ Partial (titles/CTA) |
+| FAQ.tsx | ✅ Compliant | ✅ Translated |
+| Header.tsx | ✅ Compliant | ✅ Translated |
+| Footer.tsx | ✅ Compliant | ✅ Translated |
+| ValidationModal.tsx | ✅ Compliant | ✅ Translated |
+| ComparisonTable.tsx | ✅ Compliant | ✅ Translated |
 
 ---
 
@@ -138,11 +171,14 @@ All components have been updated to use Design System variables:
 ✅ **Mobile-first responsive design implemented**
 ✅ **Accessibility requirements met (contrast, touch targets, labels)**
 ✅ **Build passes successfully**
+✅ **Multi-language support implemented (pt-BR, en-US)**
+✅ **Language persistence with localStorage**
+✅ **Language selector in header with flags**
 
-The landing page is fully compliant with your design system specifications!
+The landing page is fully compliant with your design system specifications and supports internationalization!
 
 ---
 
 ## Last Updated
 
-2026-03-29 - Full migration to Design System CSS variables completed.
+2026-03-29 - Full migration to Design System CSS variables completed. i18n support added with Portuguese (default) and English.

@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { useTranslation } from "../context/TranslationContext";
 
 export function QualificationForm() {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -18,7 +20,7 @@ export function QualificationForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Qualification form submitted:", formData);
-    alert("Diagnóstico gerado com sucesso! Você receberá os resultados em breve.");
+    alert(t("qualificationForm.successMessage"));
   };
 
   const handleChange = (
@@ -46,10 +48,10 @@ export function QualificationForm() {
     >
       <div className="max-w-[650px] mx-auto px-6">
         <h2 className="text-[24px] md:text-[32px] leading-[32px] md:leading-[40px] font-semibold text-[var(--text-dark)] text-center mb-4">
-          Responda 7 perguntas para gerar seu diagnóstico
+          {t("qualificationForm.title")}
         </h2>
         <p className="text-center text-[var(--text-muted)] mb-10">
-          Análise personalizada em 2 minutos
+          {t("qualificationForm.subtitle")}
         </p>
 
         <form
@@ -62,7 +64,7 @@ export function QualificationForm() {
               htmlFor="name"
               className="block text-sm font-medium text-[var(--text-dark)] mb-2"
             >
-              Nome Completo *
+              {t("qualificationForm.fields.name.label")}
             </label>
             <input
               type="text"
@@ -71,7 +73,7 @@ export function QualificationForm() {
               required
               value={formData.name}
               onChange={handleChange}
-              placeholder="Seu nome completo"
+              placeholder={t("qualificationForm.fields.name.placeholder")}
               className="w-full h-12 px-4 border border-[var(--border-light)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent text-base"
             />
           </div>
@@ -82,7 +84,7 @@ export function QualificationForm() {
               htmlFor="email"
               className="block text-sm font-medium text-[var(--text-dark)] mb-2"
             >
-              E-mail Corporativo *
+              {t("qualificationForm.fields.email.label")}
             </label>
             <input
               type="email"
@@ -91,7 +93,7 @@ export function QualificationForm() {
               required
               value={formData.email}
               onChange={handleChange}
-              placeholder="seu@empresa.com"
+              placeholder={t("qualificationForm.fields.email.placeholder")}
               className="w-full h-12 px-4 border border-[var(--border-light)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent text-base"
             />
           </div>
@@ -102,7 +104,7 @@ export function QualificationForm() {
               htmlFor="role"
               className="block text-sm font-medium text-[var(--text-dark)] mb-2"
             >
-              Cargo *
+              {t("qualificationForm.fields.role.label")}
             </label>
             <select
               id="role"
@@ -112,13 +114,13 @@ export function QualificationForm() {
               onChange={handleChange}
               className="w-full h-12 px-4 border border-[var(--border-light)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent bg-white text-base"
             >
-              <option value="">Selecione seu cargo</option>
-              <option value="ceo">CEO/Founder</option>
-              <option value="cto">CTO</option>
-              <option value="vp">VP Engenharia</option>
-              <option value="gpm">GPM</option>
-              <option value="techlead">Tech Lead</option>
-              <option value="other">Outro</option>
+              <option value="">{t("qualificationForm.fields.role.placeholder")}</option>
+              <option value="ceo">{t("qualificationForm.fields.role.options.ceo")}</option>
+              <option value="cto">{t("qualificationForm.fields.role.options.cto")}</option>
+              <option value="vp">{t("qualificationForm.fields.role.options.vp")}</option>
+              <option value="gpm">{t("qualificationForm.fields.role.options.gpm")}</option>
+              <option value="techlead">{t("qualificationForm.fields.role.options.techlead")}</option>
+              <option value="other">{t("qualificationForm.fields.role.options.other")}</option>
             </select>
           </div>
 
@@ -128,7 +130,7 @@ export function QualificationForm() {
               htmlFor="teamSize"
               className="block text-sm font-medium text-[var(--text-dark)] mb-2"
             >
-              Tamanho do Time de Engenharia *
+              {t("qualificationForm.fields.teamSize.label")}
             </label>
             <select
               id="teamSize"
@@ -138,18 +140,18 @@ export function QualificationForm() {
               onChange={handleChange}
               className="w-full h-12 px-4 border border-[var(--border-light)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent bg-white text-base"
             >
-              <option value="">Selecione o tamanho</option>
-              <option value="1-5">1-5 devs</option>
-              <option value="6-15">6-15 devs</option>
-              <option value="16-50">16-50 devs</option>
-              <option value="50+">50+ devs</option>
+              <option value="">{t("qualificationForm.fields.teamSize.placeholder")}</option>
+              <option value="1-5">{t("qualificationForm.fields.teamSize.options.1-5")}</option>
+              <option value="6-15">{t("qualificationForm.fields.teamSize.options.6-15")}</option>
+              <option value="16-50">{t("qualificationForm.fields.teamSize.options.16-50")}</option>
+              <option value="50+">{t("qualificationForm.fields.teamSize.options.50+")}</option>
             </select>
           </div>
 
           {/* 5. Usa IA para código? */}
           <div className="mb-6">
             <label className="block text-sm font-medium text-[var(--text-dark)] mb-3">
-              Seu time usa IA para gerar código? *
+              {t("qualificationForm.fields.usesAI.label")}
             </label>
             <div className="space-y-2">
               <label className="flex items-center">
@@ -162,7 +164,7 @@ export function QualificationForm() {
                   required
                   className="mr-3 h-4 w-4 text-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]"
                 />
-                <span className="text-[var(--text-body)]">Sim, amplamente</span>
+                <span className="text-[var(--text-body)]">{t("qualificationForm.fields.usesAI.options.widely")}</span>
               </label>
               <label className="flex items-center">
                 <input
@@ -173,7 +175,7 @@ export function QualificationForm() {
                   onChange={handleChange}
                   className="mr-3 h-4 w-4 text-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]"
                 />
-                <span className="text-[var(--text-body)]">Sim, pontualmente</span>
+                <span className="text-[var(--text-body)]">{t("qualificationForm.fields.usesAI.options.occasionally")}</span>
               </label>
               <label className="flex items-center">
                 <input
@@ -184,7 +186,7 @@ export function QualificationForm() {
                   onChange={handleChange}
                   className="mr-3 h-4 w-4 text-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]"
                 />
-                <span className="text-[var(--text-body)]">Não, mas planeja</span>
+                <span className="text-[var(--text-body)]">{t("qualificationForm.fields.usesAI.options.planning")}</span>
               </label>
               <label className="flex items-center">
                 <input
@@ -195,7 +197,7 @@ export function QualificationForm() {
                   onChange={handleChange}
                   className="mr-3 h-4 w-4 text-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]"
                 />
-                <span className="text-[var(--text-body)]">Não</span>
+                <span className="text-[var(--text-body)]">{t("qualificationForm.fields.usesAI.options.no")}</span>
               </label>
             </div>
           </div>
@@ -206,7 +208,7 @@ export function QualificationForm() {
               htmlFor="reviewHours"
               className="block text-sm font-medium text-[var(--text-dark)] mb-2"
             >
-              Horas/semana revisando código gerado por IA *
+              {t("qualificationForm.fields.reviewHours.label")}
             </label>
             <select
               id="reviewHours"
@@ -216,13 +218,13 @@ export function QualificationForm() {
               onChange={handleChange}
               className="w-full h-12 px-4 border border-[var(--border-light)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent bg-white text-base"
             >
-              <option value="">Selecione</option>
-              <option value="none">Não revisamos</option>
-              <option value="<1h">&lt;1h por semana</option>
-              <option value="1-5h">1-5h por semana</option>
-              <option value="5-10h">5-10h por semana</option>
-              <option value="10-20h">10-20h por semana</option>
-              <option value=">20h">&gt;20h por semana</option>
+              <option value="">{t("qualificationForm.fields.reviewHours.placeholder")}</option>
+              <option value="none">{t("qualificationForm.fields.reviewHours.options.none")}</option>
+              <option value="<1h">{t("qualificationForm.fields.reviewHours.options.<1h")}</option>
+              <option value="1-5h">{t("qualificationForm.fields.reviewHours.options.1-5h")}</option>
+              <option value="5-10h">{t("qualificationForm.fields.reviewHours.options.5-10h")}</option>
+              <option value="10-20h">{t("qualificationForm.fields.reviewHours.options.10-20h")}</option>
+              <option value=">20h">{t("qualificationForm.fields.reviewHours.options.>20h")}</option>
             </select>
           </div>
 
@@ -232,7 +234,7 @@ export function QualificationForm() {
               htmlFor="bugs"
               className="block text-sm font-medium text-[var(--text-dark)] mb-2"
             >
-              Bugs em produção (último trimestre) *
+              {t("qualificationForm.fields.bugs.label")}
             </label>
             <select
               id="bugs"
@@ -242,13 +244,13 @@ export function QualificationForm() {
               onChange={handleChange}
               className="w-full h-12 px-4 border border-[var(--border-light)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent bg-white text-base"
             >
-              <option value="">Selecione</option>
-              <option value="none">Nenhum</option>
-              <option value="1-3">1-3 bugs</option>
-              <option value="4-10">4-10 bugs</option>
-              <option value="11-20">11-20 bugs</option>
-              <option value=">20">&gt;20 bugs</option>
-              <option value="not-measured">Não medimos</option>
+              <option value="">{t("qualificationForm.fields.bugs.placeholder")}</option>
+              <option value="none">{t("qualificationForm.fields.bugs.options.none")}</option>
+              <option value="1-3">{t("qualificationForm.fields.bugs.options.1-3")}</option>
+              <option value="4-10">{t("qualificationForm.fields.bugs.options.4-10")}</option>
+              <option value="11-20">{t("qualificationForm.fields.bugs.options.11-20")}</option>
+              <option value=">20">{t("qualificationForm.fields.bugs.options.>20")}</option>
+              <option value="not-measured">{t("qualificationForm.fields.bugs.options.not-measured")}</option>
             </select>
           </div>
 
@@ -258,7 +260,7 @@ export function QualificationForm() {
               htmlFor="features"
               className="block text-sm font-medium text-[var(--text-dark)] mb-2"
             >
-              Features entregues por sprint (média) *
+              {t("qualificationForm.fields.features.label")}
             </label>
             <select
               id="features"
@@ -268,13 +270,13 @@ export function QualificationForm() {
               onChange={handleChange}
               className="w-full h-12 px-4 border border-[var(--border-light)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent bg-white text-base"
             >
-              <option value="">Selecione</option>
-              <option value="<3">&lt;3 features</option>
-              <option value="3-5">3-5 features</option>
-              <option value="6-10">6-10 features</option>
-              <option value="11-15">11-15 features</option>
-              <option value=">15">&gt;15 features</option>
-              <option value="not-measured">Não medimos</option>
+              <option value="">{t("qualificationForm.fields.features.placeholder")}</option>
+              <option value="<3">{t("qualificationForm.fields.features.options.<3")}</option>
+              <option value="3-5">{t("qualificationForm.fields.features.options.3-5")}</option>
+              <option value="6-10">{t("qualificationForm.fields.features.options.6-10")}</option>
+              <option value="11-15">{t("qualificationForm.fields.features.options.11-15")}</option>
+              <option value=">15">{t("qualificationForm.fields.features.options.>15")}</option>
+              <option value="not-measured">{t("qualificationForm.fields.features.options.not-measured")}</option>
             </select>
           </div>
 
@@ -284,7 +286,7 @@ export function QualificationForm() {
               htmlFor="mainConcern"
               className="block text-sm font-medium text-[var(--text-dark)] mb-2"
             >
-              Sua maior preocupação hoje *
+              {t("qualificationForm.fields.mainConcern.label")}
             </label>
             <select
               id="mainConcern"
@@ -294,20 +296,20 @@ export function QualificationForm() {
               onChange={handleChange}
               className="w-full h-12 px-4 border border-[var(--border-light)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent bg-white text-base"
             >
-              <option value="">Selecione</option>
-              <option value="quality">Qualidade do código</option>
-              <option value="security">Segurança</option>
-              <option value="compliance">Conformidade regulatória</option>
-              <option value="tech-debt">Dívida técnica</option>
-              <option value="training">Treinamento do time</option>
-              <option value="other">Outro</option>
+              <option value="">{t("qualificationForm.fields.mainConcern.placeholder")}</option>
+              <option value="quality">{t("qualificationForm.fields.mainConcern.options.quality")}</option>
+              <option value="security">{t("qualificationForm.fields.mainConcern.options.security")}</option>
+              <option value="compliance">{t("qualificationForm.fields.mainConcern.options.compliance")}</option>
+              <option value="tech-debt">{t("qualificationForm.fields.mainConcern.options.tech-debt")}</option>
+              <option value="training">{t("qualificationForm.fields.mainConcern.options.training")}</option>
+              <option value="other">{t("qualificationForm.fields.mainConcern.options.other")}</option>
             </select>
           </div>
 
           {/* 10. Restrições de código externo */}
           <div className="mb-6">
             <label className="block text-sm font-medium text-[var(--text-dark)] mb-3">
-              Sua empresa tem restrições para enviar código a APIs externas? *
+              {t("qualificationForm.fields.codeRestrictions.label")}
             </label>
             <div className="space-y-2">
               <label className="flex items-center">
@@ -320,7 +322,7 @@ export function QualificationForm() {
                   required
                   className="mr-3 h-4 w-4 text-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]"
                 />
-                <span className="text-[var(--text-body)]">Sim, restrições rígidas</span>
+                <span className="text-[var(--text-body)]">{t("qualificationForm.fields.codeRestrictions.options.strict")}</span>
               </label>
               <label className="flex items-center">
                 <input
@@ -331,7 +333,7 @@ export function QualificationForm() {
                   onChange={handleChange}
                   className="mr-3 h-4 w-4 text-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]"
                 />
-                <span className="text-[var(--text-body)]">Sim, restrições moderadas</span>
+                <span className="text-[var(--text-body)]">{t("qualificationForm.fields.codeRestrictions.options.moderate")}</span>
               </label>
               <label className="flex items-center">
                 <input
@@ -342,7 +344,7 @@ export function QualificationForm() {
                   onChange={handleChange}
                   className="mr-3 h-4 w-4 text-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]"
                 />
-                <span className="text-[var(--text-body)]">Não</span>
+                <span className="text-[var(--text-body)]">{t("qualificationForm.fields.codeRestrictions.options.no")}</span>
               </label>
               <label className="flex items-center">
                 <input
@@ -353,7 +355,7 @@ export function QualificationForm() {
                   onChange={handleChange}
                   className="mr-3 h-4 w-4 text-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6]"
                 />
-                <span className="text-[var(--text-body)]">Não sei</span>
+                <span className="text-[var(--text-body)]">{t("qualificationForm.fields.codeRestrictions.options.unknown")}</span>
               </label>
             </div>
           </div>
@@ -369,8 +371,7 @@ export function QualificationForm() {
                 className="mr-3 mt-1 h-4 w-4 text-[#3B82F6] focus:ring-2 focus:ring-[#3B82F6] rounded"
               />
               <span className="text-sm text-[var(--text-body)]">
-                Sim, quero otimizar meu resultado e receber recomendações
-                personalizadas
+                {t("qualificationForm.fields.canContact.label")}
               </span>
             </label>
           </div>
@@ -380,13 +381,12 @@ export function QualificationForm() {
             type="submit"
             className="w-full bg-[var(--primary-green)] hover:bg-[var(--primary-green-hover)] text-white py-4 rounded-lg text-lg font-semibold transition-all hover:shadow-xl hover:-translate-y-0.5"
           >
-            GERAR DIAGNÓSTICO GRATUITO →
+            {t("qualificationForm.cta")}
           </button>
 
           {/* Privacy Note */}
           <p className="text-sm text-[var(--text-muted)] text-center mt-6">
-            🔐 Seus dados estão seguros. Não enviamos spam. Código-fonte NÃO é
-            coletado.
+            {t("qualificationForm.privacyNote")}
           </p>
         </form>
       </div>
